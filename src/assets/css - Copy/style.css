@@ -1,0 +1,4770 @@
+/*!
+ * Autor: Amaury Mateo
+ */
+
+
+/* [Core Stylesheet - 1.0] */
+
+
+/* :: 1.0 Import Fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,600,700");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+html {
+    height: auto!important;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+label,
+button {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+body.loteria-dashboard {
+    background: #dee2e6 !important;
+    padding-right: 0!important;
+}
+
+body.loteria-dashboard.dark {
+    background-color: transparent !important;
+    padding-right: 0!important;
+    background-image: url(../images/bg-avanzza-01.jpg) !important;
+    ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.active-cyan-2 input.form-control[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #54c8ff;
+    box-shadow: 0 1px 0 0 #54c8ff;
+}
+
+
+/* HEATHER */
+
+
+/* Nav Logo Top ======================== */
+
+.loteria-dashboard .bg-loteria-blue-dark {
+    background-color: #FFFFFF !important;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU3JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYWVhZWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #fff 0%, #fff 57%, #eaeaea 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(57%, #fff), color-stop(100%, #eaeaea));
+    background: -webkit-linear-gradient(top, #fff 0%, #fff 57%, #eaeaea 100%);
+    background: -o-linear-gradient(top, #fff 0%, #fff 57%, #eaeaea 100%);
+    background: -ms-linear-gradient(top, #fff 0%, #fff 57%, #eaeaea 100%);
+    background: linear-gradient(to bottom, #fff 0%, #fff 57%, #eaeaea 100%);
+    -pie-background: linear-gradient(top, #fff 0%, #fff 57%, #eaeaea 100%);
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+.loteria-dashboard .navbar .navbar-brand {
+    max-width: 130px;
+}
+
+.loteria-dashboard .navbar .navbar-brand img {
+    height: auto;
+}
+
+.loteria-dashboard .navbar .top-bar {
+    font-size: 0.9rem;
+}
+
+.active-cyan .fas,
+.active-cyan-2 .fas,
+.active-cyan-3 .fas,
+.active-cyan-4 .fas {
+    color: #54c8ff;
+}
+
+.loteria-dashboard .navbar .top-bar .nav-item:nth-child(2) {
+    position: relative;
+    overflow: inherit !important;
+    padding-left: 5%;
+}
+
+.loteria-dashboard .navbar .nav-item .email {
+    position: relative;
+    overflow: inherit !important;
+    width: 70px;
+}
+
+.loteria-dashboard .navbar .nav-item .email .badge {
+    position: absolute;
+    z-index: 999;
+    left: 20px;
+    top: 0px;
+}
+
+.loteria-dashboard .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.loteria-dashboard.dark .container-fluid {
+    width: 100%;
+    max-width: 1700px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* badge ======================== */
+
+.badge {
+    display: inline-block;
+    background-color: #ff3547cf;
+    border-radius: 50%;
+    color: #fff;
+    padding: 0.5em 0.75em;
+    position: relative;
+}
+
+.pulsate::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: pulse 1s ease infinite;
+    border-radius: 50%;
+    border: 4px double #ff3547;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    60% {
+        transform: scale(1.3);
+        opacity: 0.4;
+    }
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
+
+/* badge .end//======================== */
+
+.nav-item .nav-link.dropdown-toggle img {
+    width: 30px;
+    height: 30px
+}
+
+
+/* Nav Logo Top .end//======================== */
+
+.navbar.bg-loteria-blue-dark form .md-form .form-control {
+    color: #fff;
+}
+
+.navbar.bg-loteria-blue-dark form .md-form .form-control::placeholder {
+    color: #fff;
+}
+
+.navbar .nav-item.avatar {
+    padding: 0;
+}
+
+.navbar.bg-loteria-blue-dark form .md-form input {
+    border-bottom: 1px solid #fff;
+}
+
+.loteria-dashboard .navbar .nav-item.avatar {
+    width: 60px;
+    height: 60px
+}
+
+.navbar-new-bottom {
+    background-color: #f7f7f7;
+    box-shadow: 0 5px 6px -2px rgba(0, 0, 0, .3);
+    border-top: 1px solid #e0e0e0;
+    margin-top: 0px;
+    height: 40px;
+}
+
+.navbar-new-bottom ul li {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+/* Menu =======================  */
+
+.navbar.t-button {
+    /* position: relative; */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.loteria-dashboard .header-navbar.navbar-expand-sm.navbar {
+    padding: 0;
+    background-color: #037ccc !important;
+}
+
+.loteria-dashboard .navbar-nav .dropdown a,
+.loteria-dashboard .navbar-nav .mega-dropdown-menu,
+.loteria-dashboard .navigation-main .mega-dropdown-menu {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.horizontal-top-icon-menu #main-menu-navigation li.nav-item .nav-link {
+    text-align: center;
+}
+
+.horizontal-top-icon-menu #main-menu-navigation li.nav-item .nav-link i {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-right: 0;
+    margin-bottom: .5rem;
+    float: none;
+}
+
+.horizontal-top-icon-menu #main-menu-navigation li.nav-item .nav-link {
+    text-align: center;
+}
+
+.dropdown .dropdown-menu {
+    opacity: 0;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    -ms-transform-origin: top;
+    -o-transform-origin: top;
+    transform-origin: top;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-transform: scale(1, 0);
+    -moz-transform: scale(1, 0);
+    -ms-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+    /* border-radius: .21rem; */
+    border-radius: 0;
+    display: block;
+}
+
+.show>.dropdown-menu {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+}
+
+.dropdown .dropdown-divider,
+.dropdown .dropdown-menu {
+    border: 1px solid #E6E6E6;
+}
+
+.dropdown .dropdown-menu .dropdown-item {
+    padding: 10px 20px;
+    width: 100%;
+    width: 100%;
+    font-size: 1rem;
+    text-transform: none;
+}
+
+.show>.dropdown-menu {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+}
+
+.navbar .dropdown-menu a,
+.navbar .dropdown-menu a:not(.active) {
+    color: #828282;
+    font-size: .95rem;
+}
+
+.nav.navbar-nav .dropdown .dropdown-toggle i,
+.nav.navbar-nav .dropdown .dropdown-toggle span {
+    color: #FFFFFF;
+}
+
+.loteria-dashboard .navbar-nav.top-bar input.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #FFFFFF;
+    opacity: 1;
+    /* Firefox */
+}
+
+.loteria-dashboard .navbar-nav.top-bar input.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #FFFFFF;
+}
+
+.loteria-dashboard .navbar-nav.top-bar input.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #FFFFFF;
+}
+
+.navbar-horizontal .dropdown-menu .dropdown-submenu>a:after,
+.navbar-horizontal .dropdown-menu .dropdown-submenu>button:after {
+    font-size: .75rem;
+    right: 6px;
+}
+
+.dropdown-menu .dropdown-submenu>a:after,
+.dropdown-menu .dropdown-submenu>button:after {
+    font-family: "simple-line-icons";
+    content: '\e606'!important;
+    right: 15px;
+    font-size: .9rem;
+    float: right;
+    border: none;
+    position: absolute;
+}
+
+.navbar-horizontal .dropdown-toggle::after {
+    top: 11px!important;
+}
+
+.dropdown-toggle::after {
+    font-size: .7rem;
+    font-family: "simple-line-icons";
+    content: '\e606'!important;
+    border: none!important;
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 0 2px 0 6px;
+    margin: 0 .3em 0 0;
+    vertical-align: 0;
+}
+
+.loteria-dashboard .dropdown-item:focus,
+.loteria-dashboard .dropdown-item:hover {
+    color: #f8f9fa !important;
+    text-decoration: none;
+    background-color: #50b0ef;
+}
+
+.loteria-dashboard .dropdown.nav-item .dropdown-menu {
+    padding: 0px !important;
+}
+
+.navbar-nav .mega-dropdown-menu .dropdown-menu-header,
+.navigation-main .mega-dropdown-menu .dropdown-menu-header {
+    padding: .5rem 0;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.nav .nav-item i {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+.dropdown i,
+.nav-item i {
+    margin-right: .5rem;
+}
+
+.navbar-nav .mega-dropdown-menu ul li a .icon-arrow-right-circle,
+.navigation-main .mega-dropdown-menu ul li a .icon-arrow-right-circle {
+    float: right;
+}
+
+.navbar-nav .mega-dropdown-menu ul a.dropdown-item,
+.navigation-main .mega-dropdown-menu ul a.dropdown-item {
+    padding: 10px;
+}
+
+
+/*.dropdown .dropdown-menu .dropdown-item {
+    padding: 10px 20px;
+    width: 100%;
+}*/
+
+.navbar-nav .mega-dropdown-menu ul li a,
+.navigation-main .mega-dropdown-menu ul li a {
+    display: block;
+    color: #373A3C;
+}
+
+.header-navbar .navbar-container {
+    padding: 0px;
+    height: 4.57rem;
+    -webkit-transition: .3s ease all;
+    -o-transition: .3s ease all;
+    -moz-transition: .3s ease all;
+    transition: .3s ease all;
+    background: inherit;
+}
+
+.header-navbar .navbar-container {
+    width: 100%;
+    height: auto;
+}
+
+.loteria-dashboard #main-menu-navigation li.nav-item .nav-link i {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-right: 0;
+    margin-bottom: .5rem;
+    float: none;
+}
+
+.loteria-dashboard #main-menu-navigation li.nav-item .nav-link {
+    text-align: center;
+    height: 100%;
+}
+
+.loteria-dashboard .header-navbar .navbar-container ul.nav li>a.nav-link {
+    /* padding: 1.8rem 1rem; */
+    font-size: .81rem;
+    line-height: .8rem !important;
+}
+
+.loteria-dashboard .dropdown-toggle::after {
+    display: none;
+}
+
+.loteria-dashboard .dropdown.dropdown-submenu .dropdown-toggle::after {
+    display: inherit;
+}
+
+.nav.navbar-nav .dropdown .dropdown-toggle i {
+    color: #FFFFFF;
+}
+
+.loteria-dashboard .navbar-nav .mega-dropdown-menu,
+.navigation-main .mega-dropdown-menu {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    width: -webkit-calc(100% - 50px);
+    width: -moz-calc(100% - 50px);
+    width: calc(100% - 50px);
+    padding: .5rem 0 !important;
+    margin: 0 25px;
+    -webkit-box-shadow: 0 5px 75px 2px rgba(64, 70, 74, .2);
+    box-shadow: 0 5px 75px 2px rgba(64, 70, 74, .2);
+    z-index: 9999;
+}
+
+.loteria-dashboard .dropdown.nav-item .mega-dropdown-menu.dropdown-menu {
+    padding: .9rem 0 !important;
+}
+
+.mega-dropdown .dropdown-menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex !important;
+}
+
+.mega-dropdown {
+    position: static!important;
+}
+
+.loteria-dashboard .mega-dropdown-menu {
+    margin: 0 25px!important;
+}
+
+.loteria-dashboard .sliding-menu {
+    overflow: hidden;
+    position: relative;
+}
+
+.navbar-nav .mega-dropdown-menu ul a.dropdown-item,
+.navigation-main .mega-dropdown-menu ul a.dropdown-item {
+    padding: 10px;
+}
+
+.dropdown .dropdown-menu .dropdown-item {
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.navbar-dark .navbar-nav li,
+.navbar-light .navbar-nav li,
+.navbar-semi-dark .navbar-nav li,
+.navbar-semi-light .navbar-nav li {
+    line-height: 1;
+}
+
+.navbar-nav .mega-dropdown-menu ul a.dropdown-item,
+.navigation-main .mega-dropdown-menu ul a.dropdown-item {
+    padding: 10px;
+}
+
+.navbar-nav .mega-dropdown-menu ul li a,
+.navigation-main .mega-dropdown-menu ul li a {
+    display: block;
+    color: #373A3C;
+}
+
+
+/* .dropdown .dropdown-menu {
+    opacity: 0;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    -ms-transform-origin: top;
+    -o-transform-origin: top;
+    transform-origin: top;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-transform: scale(1,0);
+    -moz-transform: scale(1,0);
+    -ms-transform: scale(1,0);
+    -o-transform: scale(1,0);
+    transform: scale(1,0);
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    border-radius: .21rem;
+    display: block;
+}*/
+
+.columns {
+    display: block;
+    width: 100%;
+}
+
+.columns ul li {
+    text-align: left;
+}
+
+.columns .original a {
+    color: #333;
+}
+
+.navbar-nav .mega-dropdown-menu ul,
+.navigation-main .mega-dropdown-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.sliding-menu ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav .mega-dropdown-menu ul a.dropdown-item,
+.navigation-main .mega-dropdown-menu ul a.dropdown-item {
+    padding: 10px;
+}
+
+.dropdown .dropdown-menu .dropdown-item {
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.primary {
+    color: #967ADC!important;
+}
+
+.nav .nav-item i {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+.dropdown i,
+.nav-item i {
+    margin-right: .5rem;
+}
+
+
+/* .loteria-dashboard .navbar-fixed {
+    z-index: 99!important;
+}
+
+.sticky-wrapper.menu .nav.navbar-nav .dropdown.mega-dropdown .mega-dropdown-menu{z-index: 999!important;} */
+
+
+/* Style the navbar */
+
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+/* Navbar links */
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+
+/* Page content */
+
+.content {
+    padding: 16px;
+}
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+.navbar .nav-item .dropdown-menu {
+    display: none;
+}
+
+.navbar .nav-item:hover .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-item:hover>.dropdown-menu {
+    display: block;
+}
+
+.navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+}
+
+
+/* desktop view ======================== */
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+    .navbar .nav-item:hover .nav-link {
+        color: #fff;
+    }
+    .navbar .nav-item:hover>.dropdown-menu {
+        display: block;
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+    .navbar .nav-item .dropdown-menu {
+        margin-top: -5px;
+    }
+}
+
+
+/* desktop view .end// ======================== */
+
+.dropdown-menu .dropdown-toggle:after {
+    border-top: .3em solid transparent;
+    border-right: 0;
+    border-bottom: .3em solid transparent;
+    border-left: .3em solid;
+}
+
+.dropdown-menu .dropdown-menu {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.dropdown-menu li {
+    position: relative;
+}
+
+.nav-item .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+
+.nav-item .submenu-left {
+    right: 100%;
+    left: auto;
+}
+
+.dropdown-menu>li:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown-menu>li:hover>.submenu {
+    display: block;
+}
+
+.navbar .nav-item:hover>.mega-dropdown-menu.dropdown-menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+}
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar .has-megamenu {
+    position: static!important;
+}
+
+.navbar .megamenu {
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+.navbar .nav-link {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.loteria-dashboard .loteria-menu>li {
+    margin: 0;
+    color: inherit;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    white-space: normal;
+    cursor: pointer;
+    border: 0;
+    border-radius: .125rem;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    /* padding: .84rem 2.14rem; */
+    font-size: .81rem;
+    display: table-cell;
+}
+
+.loteria-dashboard .loteria-menu>li {
+    color: #fff;
+    background-color: #037ccc !important;
+}
+
+
+/* .btn-top-menu {
+    margin:0;
+    color: inherit;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    white-space: normal;
+    cursor: pointer;
+    border: 0;
+    border-radius: .125rem;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    -webkit-transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+    padding: .84rem 2.14rem;
+    font-size: .81rem;
+    display: table-cell;
+} */
+
+
+/* .btn-top-menu a.nav-link{
+    padding: .84rem 2.14rem !important;
+} */
+
+.navbar.navbar-dark .breadcrumb .nav-item.btn-top-menu.active>.nav-link,
+.navbar.navbar-dark .navbar-nav .nav-item.btn-top-menu.active>.nav-link {
+    background-color: transparent;
+}
+
+li.btn-top-menu:not([disabled]):not(.disabled):active,
+li.btn-top-menu:not([disabled]):not(.disabled).active,
+.show>li.btn-top-menu.dropdown-toggle {
+    background-color: #02519c !important;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn-top-menu:hover,
+.btn-top-menu:focus,
+.btn-top-menu:active {
+    outline: 0;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn-top-menu:focus,
+.btn-top-menu.focus {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn-top-menu {
+    color: #fff;
+    background-color: #037ccc !important;
+}
+
+.btn-top-menu:hover {
+    color: #fff;
+    background-color: #1786d0 !important;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.40), 0 2px 10px 0 rgba(0, 0, 0, 0.20);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.40), 0 2px 10px 0 rgba(0, 0, 0, 0.30);
+    /* font-size: .91rem; */
+}
+
+
+/*
+.loteria-dashboard .navbar-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+} */
+
+
+/* Menu .End//======================== */
+
+
+/* HEATHER .END// */
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+
+/* CONTAINER */
+
+.loteria-dashboard .primary-color,
+.loteria-dashboard ul.stepper li.active a .circle,
+.loteria-dashboard ul.stepper li.completed a .circle {
+    background-color: #037ccc !important;
+}
+
+.loteria-dashboard .pills-primary .nav-link.active {
+    background-color: #00a1ff!important;
+}
+
+.loteria-dashboard .blue-gradient {
+    background: linear-gradient(40deg, #45cafc, #023877) !important;
+}
+
+.table-wrapper {
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+
+/* Accordion Materias */
+
+.accordion.md-accordion.accordion-5 .card .card-header {
+    background-color: #f44336;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.accordion.md-accordion.accordion-1 .card .card-header,
+.accordion.md-accordion.accordion-2 .card .card-header,
+.accordion.md-accordion.accordion-4 .card .card-header,
+.accordion.md-accordion.accordion-5 .card .card-header {
+    border: 0;
+}
+
+.accordion.md-accordion.accordion-5 .card .card-header:hover {
+    background-color: #455a64;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.md-accordion .card .card-header {
+    padding: 1rem 1.5rem;
+    background: transparent;
+    border-bottom: 0;
+}
+
+.accordion.md-accordion.accordion-5 .card .card-header .fas,
+.accordion.md-accordion.accordion-5 .card .card-header .fab,
+.accordion.md-accordion.accordion-5 .card .card-header .far {
+    background-color: #fff;
+    border-top-left-radius: 3px;
+}
+
+.md-accordion .card .card-header a {
+    -webkit-transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
+}
+
+.accordion.md-accordion.accordion-5 .card .card-header .fas,
+.accordion.md-accordion.accordion-5 .card .card-header .fab,
+.accordion.md-accordion.accordion-5 .card .card-header .far {
+    background-color: #fff;
+    border-top-left-radius: 3px;
+}
+
+.accordion.md-accordion a {
+    color: #07afef;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+
+/* Accordion Materias .end//*/
+
+
+/* Select */
+
+.form-group.pmd-textfield {
+    position: relative;
+}
+
+.pmd-textfield-floating-label label {
+    font-size: 1rem;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .2s;
+    -ms-transform: translateY(26px);
+    transform: translateY(26px);
+}
+
+.pmd-textfield label {
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    color: rgba(0, 0, 0, .54);
+}
+
+.pmd-textfield-floating-label .form-control {
+    position: relative;
+}
+
+
+/* .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} */
+
+.loteria-dashboard .pmd-textfield .custom-select,
+.loteria-dashboard .pmd-textfield .form-control {
+    height: calc(1.5em + .375rem + .5rem + 1px);
+    padding: 0;
+    padding: .25rem 0 .5rem;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, .87);
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px rgba(0, 0, 0, .12);
+    border-radius: 0;
+    outline: 0;
+    box-shadow: none;
+}
+
+.pmd-textfield-focused {
+    position: relative;
+    top: -1px;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #4285f4;
+    transition: transform .2s cubic-bezier(.4, 0, .2, 1) 0s;
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+}
+
+.pmd-textfield-floating-label.pmd-textfield-floating-label-completed label {
+    font-size: .875rem;
+    color: rgba(0, 0, 0, .54);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.pmd-textfield.pmd-textfield-floating-label-active .pmd-textfield-focused {
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.pmd-textfield-focused {
+    position: relative;
+    top: -1px;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #4285f4!important;
+    transition: transform .2s cubic-bezier(.4, 0, .2, 1) 0s;
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+}
+
+
+/* Select .end//*/
+
+.card-no-border .card {
+    border-color: #d7dfe3;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.little-profile .pro-img {
+    margin-top: -80px;
+    margin-bottom: 20px;
+}
+
+.little-profile .pro-img img {
+    width: 128px;
+    height: 128px;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+}
+
+.little-profile .pro-img {
+    margin-top: -80px;
+    margin-bottom: 20px;
+}
+
+
+/* Table */
+
+.loteria-dashboard .table-wrapper .asignaturas th,
+.loteria-dashboard .table-wrapper .asignaturas td {
+    vertical-align: middle;
+}
+
+.horario .card-body {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    border-radius: 0 !important;
+}
+
+.horario .card-header {
+    padding: .25rem 1.25rem;
+}
+
+.loteria-dashboard .table-wrapper td.horario>div.card {
+    display: -webkit-inline-box;
+    min-width: 216px;
+}
+
+.loteria-dashboard .table-wrapper td.horario>div.card .card-header {
+    border-bottom: none;
+}
+
+
+/* Table .end//*/
+
+
+/* CONTAINER .END// */
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+
+/* FOOTER */
+
+
+/* FOOTER .END// */
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+
+/* .navbar.t-button .navbar-nav {
+    width: 100%;
+    display: inline-table;
+} */
+
+
+/*.loteria-dashboard .header-navbar .navbar-container ul.nav li:hover>a.nav-link {
+    padding: 1.8rem 1rem;
+    font-size: 0.86rem;
+}*/
+
+
+/* .navbar-nav.t-button li.btn-primary:not([disabled]):not(.disabled):active,
+.navbar-nav.t-button li.btn-primary:not([disabled]):not(.disabled).active,
+.navbar-nav.t-button .show>li.btn-primary.dropdown-toggle {} */
+
+
+/* .btn-primary:not([disabled]):not(.disabled):active, .btn-primary:not([disabled]):not(.disabled).active, .show>.btn-primary.dropdown-toggle {
+    background-color: #0b51c5 !important;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+} */
+
+
+/* LOGIN */
+
+.loteria-dashboard.login {
+    background-image: url('../images/bg-avanzza-01.jpg');
+    background-color: #cccccc;
+    background-size: cover;
+}
+
+.login-page .card {
+    background-color: rgba(229, 228, 255, .2);
+    margin-top: 30px;
+}
+
+.card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    border: 0;
+    font-weight: 400;
+}
+
+.container-login100 .input100 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px !important;
+    line-height: 1.2!important;
+    color: #333333!important;
+    display: block!important;
+    width: 100%!important;
+    background: #fff!important;
+    height: 50px!important;
+    border-radius: 25px!important;
+    padding: 0 30px 0 53px!important;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.container-login100 .login100-form-avatar {
+    width: 80%;
+    height: 100%;
+    border-radius: 0;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.container-login100::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #005bea;
+    background: -webkit-linear-gradient(bottom, #005bea, #00c6fb);
+    background: -o-linear-gradient(bottom, #005bea, #00c6fb);
+    background: -moz-linear-gradient(bottom, #005bea, #00c6fb);
+    background: linear-gradient(bottom, #005bea, #00c6fb);
+    opacity: 0.2!important;
+}
+
+.login100-form-btn {
+    background: #027BFF!important;
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+/*#animate-area {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-image: url('../images/background-t.png');
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: animatedBackground 20s linear infinite alternate;
+    opacity: 0.2;
+     width: 200px;
+	height: 200px;
+	background-image: url(http://placekitten.com/800/400);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	animation: animatedBackground 10s linear infinite alternate; */
+}
+
+.container-login100 {
+    padding: 0!important;
+}
+
+.wrap-login100 {
+    z-index: 999;
+    position: absolute;
+}
+
+.wrap-login100::-webkit-input-placeholder {
+    color: red !important;
+}
+
+.wrap-login100:-moz-placeholder {
+    /* Firefox 18- */
+    color: red;
+}
+
+.wrap-login100::-moz-placeholder {
+    /* Firefox 19+ */
+    color: red;
+}
+
+.wrap-login100:-ms-input-placeholder {
+    color: red;
+}
+
+.wrap-login100 input[type=text]::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #666;
+}
+
+.wrap-login100 input[type=text]:-moz-input-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #666;
+}
+
+.wrap-login100 input[type=text]::-moz-input-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #666;
+}
+
+.wrap-login100 input[type=text]:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #666;
+}
+
+
+/* LOGIN .END// */
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+
+/* UTILITIES */
+
+
+/* Colors Fonts */
+
+.text-blue {
+    color: #07afef;
+}
+
+.text-red {
+    color: #145594;
+}
+
+
+/* Colors Fonts .end// */
+
+.btn-primary {
+    background-color: #145594!important;
+}
+
+.btn-green {
+    background-color: #27b7ad !important;
+}
+
+.btn-orange {
+    background-color: #1e88e5 !important;
+}
+
+.bg-blue-2 {
+    background-color: #00a1ff!important;
+}
+
+.loteria-dashboard .info-color-dark {
+    background-color: #145594!important;
+}
+
+.loteria-dashboard .bg-dark-1 {
+    background-color: #4a5157!important;
+}
+
+.tex-gray {
+    color: #666666;
+}
+
+
+/* UTILITIES .END// */
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+
+/* TAPS Y */
+
+.loteria-dashboard .md-pills li {
+    padding: .2rem;
+}
+
+.px-3-66 {
+    padding-left: 0.65rem!important;
+    padding-right: 0.65rem !important;
+}
+
+
+/* TAPS Y .END// */
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+
+/* PROPERTY RESET */
+
+.loteria-dashboard .container-fluid .primary-heading::before,
+.section-heading::before {
+    height: 0;
+    margin-top: 0;
+}
+
+
+/* ROPERTY RESET .END// */
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+
+/* MODAL NOTIFICATIONS */
+
+.notifications .modal-dialog,
+.cronometro .modal-dialog {
+    position: relative;
+    /* width: 18.75rem; */
+    /* padding: 15px 15px 15px 50px; */
+    /* margin: 0 0 6px; */
+    /* overflow: hidden; */
+    filter: alpha(opacity=95);
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    opacity: .95;
+    background-image: none !important;
+}
+
+.notifications .modal-dialog .modal-content,
+.cronometro .modal-dialog .modal-content {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+.notifications .modal-dialog .modal-content .modal-body,
+.notifications .modal-dialog .modal-content .modal-body p,
+.cronometro .modal-dialog .modal-content .modal-body,
+.cronometro .modal-dialog .modal-content .modal-body p {
+    color: #FFFFFF !important;
+}
+
+.notifications .modal-dialog.modal-notify .modal-header {
+    border: 0;
+    border-bottom: 1px solid #ffffff8f;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    /* opacity: 0.70; */
+}
+
+.notifications .modal-footer {
+    border-top: 1px solid #ffffff8f;
+    /* opacity: 0.70; */
+}
+
+.notifications.satisfactorio .modal-dialog {
+    background-color: #00c851;
+}
+
+.satisfactorio-color {
+    color: #07b9a0;
+}
+
+.advertencia-color {
+    color: #fb3;
+}
+
+.notifications.confirmacion .modal-dialog {
+    background-color: #33b5e5;
+}
+
+.confirmacion-color {
+    color: #33b5e5;
+}
+
+.notifications.advertencia .modal-dialog {
+    background-color: #fb3;
+}
+
+.cronometro .modal-dialog {
+    background-color: #ff3547;
+    opacity: 0.70;
+}
+
+#screen {
+    font-size: 1.2rem;
+}
+
+.btn-outline-blue {
+    color: #33b5e5 !important;
+    background-color: transparent !important;
+    border: 2px solid #33b5e5 !important;
+}
+
+.btn-outline-red {
+    color: #145594!important;
+    background-color: transparent !important;
+    border: 2px solid #145594!important;
+}
+
+.btn-outline-blue:hover,
+.btn-outline-blue:focus,
+.btn-outline-blue:active,
+.btn-outline-blue:active:focus,
+.btn-outline-blue.active {
+    color: #00a1ff !important;
+    background-color: transparent !important;
+    border-color: #00a1ff !important;
+}
+
+
+/* .cronometro .modal-dialog{
+    background-color: #fb3;
+} */
+
+
+/* .cronometro {
+    position: fixed;
+    z-index: 999999;
+}
+
+.cronometro {
+    top: 12px;
+    right: 12px;
+}
+
+
+.cronometro>div{
+    color:#fff !important;
+}
+
+.cronometro.modal-dialog{
+    position:relative;
+    width:18.75rem;
+    padding:15px 15px 15px 50px;
+    margin:0 0 6px;
+    overflow:hidden;
+    filter:alpha(opacity=95);
+    background-repeat:no-repeat;
+    background-position:15px center;
+    -webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    opacity:.95;
+}
+
+.cronometro>:hover{
+    cursor:pointer;
+    filter:alpha(opacity=100);
+    -webkit-box-shadow:0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow:0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    opacity:1;
+    -webkit-transition:.45s;
+    transition:.45s;
+} */
+
+
+/* MODAL NOTIFICATIONS .END// */
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+
+/* SNIPPER */
+
+
+/* body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "proxima-nova-soft", sans-serif;
+  -webkit-user-select: none;
+  overflow: hidden;
+} */
+
+body .vertical-centered-box {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 9999;
+    background-color: #313131c7;
+    top: 0;
+}
+
+body .vertical-centered-box:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+}
+
+body .vertical-centered-box .content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 0;
+}
+
+* {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+/* body {
+  background: #2c2d44;
+} */
+
+.loader-circle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    margin-left: -60px;
+    margin-top: -60px;
+}
+
+.loader-line-mask {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 60px;
+    height: 120px;
+    margin-left: -60px;
+    margin-top: -60px;
+    overflow: hidden;
+    -webkit-transform-origin: 60px 60px;
+    -moz-transform-origin: 60px 60px;
+    -ms-transform-origin: 60px 60px;
+    -o-transform-origin: 60px 60px;
+    transform-origin: 60px 60px;
+    -webkit-mask-image: -webkit-linear-gradient(top, #000000, rgba(0, 0, 0, 0));
+    -webkit-animation: rotate 1.2s infinite linear;
+    -moz-animation: rotate 1.2s infinite linear;
+    -o-animation: rotate 1.2s infinite linear;
+    animation: rotate 1.2s infinite linear;
+}
+
+.loader-line-mask .loader-line {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 5px #ffffffc2
+}
+
+#particles-background,
+#particles-foreground {
+    left: -51%;
+    top: -51%;
+    width: 202%;
+    height: 202%;
+    -webkit-transform: scale3d(0.5, 0.5, 1);
+    -moz-transform: scale3d(0.5, 0.5, 1);
+    -ms-transform: scale3d(0.5, 0.5, 1);
+    -o-transform: scale3d(0.5, 0.5, 1);
+    transform: scale3d(0.5, 0.5, 1);
+}
+
+#particles-background {
+    background: #2c2d44;
+    background-image: -moz-linear-gradient(45deg, #3f3251 2%, #002025 100%);
+    background-image: -webkit-linear-gradient(45deg, #3f3251 2%, #002025 100%);
+    background-image: linear-gradient(45deg, #3f3251 2%, #002025 100%);
+}
+
+lesshat-selector {
+    -lh-property: 0;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotate {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes rotate {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+[not-existing] {
+    zoom: 1;
+}
+
+lesshat-selector {
+    -lh-property: 0;
+}
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.25;
+    }
+}
+
+@-moz-keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.25;
+    }
+}
+
+@-o-keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.25;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.25;
+    }
+}
+
+[not-existing] {
+    zoom: 1;
+}
+
+lesshat-selector {
+    -lh-property: 0;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+[not-existing] {
+    zoom: 1;
+}
+
+
+/* SNIPPER .END// */
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+
+/* SIDEBAR */
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+
+/* #sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+} */
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    width: 300px;
+    right: -300px;
+    padding: 0;
+    background-color: #FFF;
+    z-index: 1051;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    -webkit-transition: right .4s cubic-bezier(.05, .74, .2, .99);
+    -o-transition: right .4s cubic-bezier(.05, .74, .2, .99);
+    -moz-transition: right .4s cubic-bezier(.05, .74, .2, .99);
+    transition: right .4s cubic-bezier(.05, .74, .2, .99);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-left: 1px solid rgba(0, 0, 0, .05);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+.customizer-toggle {
+    background: #FFF;
+    color: #967ADC;
+    display: block;
+    border-radius: 15px 0 0 15px;
+}
+
+.customizer-toggle {
+    position: absolute;
+    top: 35%;
+    width: 54px;
+    height: 50px;
+    left: -55px;
+    text-align: center;
+    line-height: 56px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.box-shadow-3 {
+    -webkit-box-shadow: 0 14px 24px 0 rgba(62, 57, 107, .26);
+    box-shadow: 0 14px 24px 0 rgba(62, 57, 107, .26);
+}
+
+.spinner {
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    -o-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+.customizer-toggle .icon-settings {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+/* .customizer .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(59,175,218,.5) !important;
+    box-shadow: 0 0 0 0.2rem rgba(59,175,218,.5) !important;
+} */
+
+.customizer .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.customizer .btn-outline-info:not(:disabled):not(.disabled).active {
+    color: #FFF!important;
+    background-color: #3BAFDA !important;
+    border-color: #3BAFDA !important;
+}
+
+.customizer .btn.active,
+.btn.focus,
+.btn:active,
+.btn:focus {
+    outline: 0!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+.customizer .btn-outline-info {
+    color: #33b5e5 !important;
+    background-color: transparent !important;
+    border: 1px solid #33b5e5 !important;
+}
+
+.customizer .btn {
+    padding: .84rem 1.14rem;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+        right: 0;
+    }
+}
+
+
+/* SIDEBAR .END// */
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+
+/* .loteria-dashboard .fc-view, .fc-view>table {
+    position: relative;
+    z-index: 1;
+}
+.loteria-dashboard .fc table {
+    width: 100%;
+    box-sizing: border-box;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+} */
+
+
+/* .fc-view-harness.fc-view-harness-active{
+    height: 100%!important;
+    min-height: 535.556px;
+}
+
+.fc.fc-media-screen{
+    height: 100%!important;
+    min-height: 600px;
+}
+
+.loteria-dashboard .fc table {
+    width: 100%;
+    box-sizing: border-box;
+    table-layout: auto !important;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+.fc .fc-daygrid-body {
+    width: 100%!important;
+    height: 100% !important;
+}
+
+#centralModalInfo{
+    display:none;
+  } */
+
+.fc .fc-scrollgrid-section table {
+    width: 100%!important;
+    height: 100% !important;
+}
+
+.fc-scroller.fc-day-grid-container {
+    overflow: visible !important;
+    height: auto!important;
+}
+
+.fc-basic-view .fc-body .fc-row {
+    min-height: 6em !important;
+}
+
+.fc-view-container .fc-widget-content .fc-day {
+    height: 84px;
+}
+
+@media (max-width: 991px) {
+    .navbar-expand-lg .navbar-nav {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .navbar-expand-lg.visible .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .loteria-dashboard #main-menu-navigation li.nav-item .nav-link i {
+        display: block;
+        text-align: left;
+        font-size: 1.2em;
+        margin-right: 0.5rem;
+        margin-bottom: 0;
+        float: left;
+    }
+    .loteria-dashboard #main-menu-navigation li.nav-item .nav-link {
+        text-align: left;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    .btn-top-menu a.nav-link {
+        padding: .84rem 0.7rem !important;
+    }
+    .loteria-dashboard .header-navbar .navbar-container ul.nav li>a.nav-link {
+        /* padding: 1.8rem 1rem; */
+        font-size: 0.7rem;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .navbar .has-megamenu {
+        position: static!important;
+    }
+    .navbar .megamenu {
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+    }
+    .navbar .nav-link {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (min-width: 992px) {}
+
+.mega-dropdown-menu.dropdown-menu>li:hover {
+    background-color: transparent;
+}
+
+@media (min-width: 992px) {
+    .dropdown-menu .dropdown-toggle:after {
+        border-top: .3em solid transparent;
+        border-right: 0;
+        border-bottom: .3em solid transparent;
+        border-left: .3em solid;
+    }
+    .dropdown-menu .dropdown-menu {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .dropdown-menu li {
+        position: relative;
+    }
+    .nav-item .submenu {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: -7px;
+    }
+    .nav-item .submenu-left {
+        right: 100%;
+        left: auto;
+    }
+    .dropdown-menu>li:hover {
+        background-color: #f1f1f1
+    }
+    .dropdown-menu>li:hover>.submenu {
+        display: block;
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+    .navbar .nav-item:hover>.mega-dropdown-menu.dropdown-menu {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+.loteria-dashboard .sampleContainer {
+    position: relative;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background: #fff;
+    padding: 0;
+    height: auto !important;
+    margin-bottom: 0;
+    line-height: normal;
+}
+
+
+/* .loteria-dashboard .modal-fluid{max-width: 80%;} */
+
+.loteria-dashboard .navbar.navbar--with-second-nav,
+.sticky-wrapper {
+    width: 100%;
+    max-height: 100% !important;
+}
+
+span.ui-icon::before {
+    display: none;
+    content: '';
+}
+
+span.ui-icon:before {
+    display: none;
+    content: ''
+}
+
+.loteria-dashboard span.ui-icon .ui-icon-calendar-day:before {
+    content: '';
+    display: none !important;
+}
+
+.ui-icon:before,
+.ui-iggrid-collapsibleindicatorcontainer a .ui-iggrid-multiheader-collapsed:before,
+.ui-iggrid-collapsibleindicatorcontainer a .ui-iggrid-multiheader-expanded:before,
+.ui-iggrid-filtericon:before,
+.ui-iggrid-moving-indicator:before {
+    display: none !important;
+    height: 1em;
+    left: 50%;
+    line-height: 1;
+    margin-left: -.5em;
+    margin-top: -.5em;
+    position: absolute;
+    text-indent: 0;
+    top: 50%;
+    width: 1em;
+}
+
+.cuatrimestres.nav-tabs {
+    /* background-color: #037ccc; */
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cuatrimestres.nav-tabs,
+.nav.nav-tabs .nav-item .nav-link.active {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.cuatrimestres.nav-tabs li {
+    flex-grow: 1;
+}
+
+.cuatrimestres.nav-tabs li a {
+    display: block!important;
+    text-align: center;
+}
+
+.cuatrimestres.nav-tabs .nav-link,
+.cuatrimestres.nav-tabs .nav-item.show .nav-link {
+    color: #989898;
+    background-color: #efefef;
+    border-color: transparent;
+    border-right: 0;
+}
+
+.cuatrimestres.nav-tabs li:last-child .nav-link,
+.cuatrimestres.nav-tabs .nav-item.show .nav-link {
+    border-right: 1px solid #dee2e6;
+}
+
+.cuatrimestres.nav-tabs .nav-item {
+    margin-bottom: 0px;
+    padding: 0 1px;
+}
+
+.cuatrimestres.nav-tabs .nav-item:last-child {
+    padding-right: 0;
+}
+
+.cuatrimestres.nav-tabs .nav-item:first-child {
+    padding-left: 0;
+}
+
+.cuatrimestres.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #FFFFFF !important;
+    background-color: #00a1ff !important;
+    border-color: transparent;
+    /* font-weight: 600; */
+}
+
+.cuatrimestres.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    /* border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem; */
+}
+
+.cuatrimestres.nav-tabs {
+    border-bottom: 2px solid #00a1ff;
+}
+
+
+/* .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #ffffff!important;
+    background-color: #037ccc!important;
+    border-color: #037ccc!important;
+} */
+
+.br-0 {
+    border-radius: 0!important;
+}
+
+.chronometer {
+    height: 100%;
+    background-color: #ff3547;
+    display: inline-flex;
+    color: #FFFFFF;
+}
+
+.dropdown .dropdown-menu .dropdown-item:hover,
+.dropdown .dropdown-menu .dropdown-item:active,
+.dropup .dropdown-menu .dropdown-item:hover,
+.dropup .dropdown-menu .dropdown-item:active,
+.dropleft .dropdown-menu .dropdown-item:hover,
+.dropleft .dropdown-menu .dropdown-item:active,
+.dropright .dropdown-menu .dropdown-item:hover,
+.dropright .dropdown-menu .dropdown-item:active {
+    background-color: #00a1ff;
+}
+
+html body.loteria-dashboard.fixed-navbar {
+    padding-top: 0 !important;
+}
+
+.loteria-dashboard .main-menu.menu-light .navigation li a,
+.loteria-dashboard .main-menu.menu-light .navigation>li.active>a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    background: #037ccc;
+}
+
+.loteria-dashboard .main-menu.menu-light .navigation>li.active>a {
+    border-right: 4px solid #4fb9ff;
+    background-color: #023877 !important;
+}
+
+.loteria-dashboard .main-menu.menu-light {
+    color: #FFFFFF;
+    background: #037ccc;
+    border-right: 1px solid #E4E7ED;
+}
+
+.loteria-dashboard .main-menu.menu-light .btn-top-menu:hover {
+    color: #fff;
+    background-color: #023877 !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    /* font-size: .91rem; */
+}
+
+.loteria-dashboard.vertical-overlay-menu .main-menu .navigation li.has-sub>a:not(.mm-next):after {
+    font-family: simple-line-icons;
+    content: '\e606';
+    font-size: 1rem;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+    transition: -webkit-transform .2s ease-in-out;
+}
+
+.loteria-dashboard.vertical-overlay-menu .main-menu .navigation li.open>a:not(.mm-next):after {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.navbar.header-navbar .nav-link i {
+    display: none;
+}
+
+.loteria-dashboard.vertical-menu.menu-v .navbar.header-navbar .nav-link i {
+    display: block;
+    font-size: 1.2rem;
+    margin-left: -.5rem;
+    margin-right: .5rem;
+}
+
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    /* CSS */
+}
+
+
+/*
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* CSS */
+}
+
+
+/*
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* CSS */
+}
+
+
+/*
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* CSS */
+}
+
+
+/*
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* CSS */
+}
+
+
+/*
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* CSS */
+    /* .navbar-collapse.sidebar.collapse {
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -255px;
+        z-index: 999;
+        background: #037ccc;
+        color: #fff;
+        transition: all 3s;
+        box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.5);
+        text-align: left;
+    } */
+    /* .navbar-collapse.sidebar.collapse .header-navbar {
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -255px;
+        z-index: 999;
+        background: #037ccc;
+        color: #fff;
+        transition: all 10s;
+        box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.5);
+        text-align: left;
+    } */
+    .navbar-collapse.sidebar.collapse {
+        width: 250px;
+        min-height: 100vh;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -255px;
+        z-index: 999;
+        background: #037ccc;
+        color: #fff;
+        transition: all 3s;
+        /* transition: left 5s cubic-bezier(.05,.74,.2,.99); */
+        box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.5);
+        text-align: left;
+        display: block;
+    }
+    .navbar-collapse.sidebar.collapse.show {
+        left: 0;
+    }
+    .navbar-toggler {
+        float: right;
+        display: block;
+        right: 0;
+        position: absolute;
+        top: 0;
+        z-index: 999;
+    }
+    .collapsing {
+        position: fixed;
+        height: 100%;
+        overflow: visible;
+        transition: none;
+    }
+    .bottom-toggler {
+        display: block;
+        height: 40px;
+    }
+    /* .btn-top-menu {
+        margin: 0;
+        color: inherit;
+        text-transform: uppercase;
+        word-wrap: break-word;
+        white-space: normal;
+        cursor: pointer;
+        border: 0;
+        border-radius: .125rem;
+        -webkit-box-shadow:none !important;
+        box-shadow:none !important;
+        -webkit-transition: none !important;
+        transition: none!important;
+        transition: none !important;
+        transition: none !important; */
+    /* padding: .84rem 2.14rem; */
+    /* font-size: .81rem;
+        display: table-cell;
+    } */
+    .navbar-collapse.sidebar.collapse.show .navbar {
+        font-weight: 300;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+@media (min-width: 990px) and (max-width: 1200px) {
+    /* CSS */
+    .header-navbar .navbar-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+    }
+    .navbar-expand-sm .navbar-nav {
+        height: 100%;
+    }
+    .loteria-dashboard #main-menu-navigation li.nav-item .nav-link {
+        height: 100%;
+    }
+    .loteria-dashboard #main-menu-navigation li.nav-item .nav-link i {
+        padding-top: 45%;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 990px) {
+    /* CSS */
+    .header-navbar .navbar-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+    }
+    .navbar-expand-sm .navbar-nav {
+        height: 100%;
+    }
+    .loteria-dashboard #main-menu-navigation li.nav-item .nav-link {
+        height: 100%;
+    }
+    .loteria-dashboard #main-menu-navigation li.nav-item .nav-link i {
+        padding-top: 20%;
+    }
+    .loteria-dashboard .sticky-wrapper .header-navbar {
+        padding: 0;
+        min-height: 3rem;
+        font-family: Muli, Georgia, 'Times New Roman', Times, serif;
+        transition: .3s ease all;
+    }
+}
+
+.time-sm-device {
+    display: none;
+}
+
+.time-desktop {
+    display: block;
+}
+
+.mobile-view {
+    display: none;
+}
+
+.loteria-dashboard .card-header p {
+    color: #666666;
+}
+
+.loteria-dashboard .card-body .card-title {
+    background-color: #145594;
+    color: #FFFFFF;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 1rem;
+}
+
+.md-accordion .card .card-header .select {
+    /* display: block;
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    vertical-align: middle;
+    padding: 1rem;
+    background-color: #037ccc;
+    color: #FFFFFF; */
+    margin: .375rem;
+    color: inherit;
+    text-transform: uppercase;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+    cursor: pointer;
+    border: 0;
+    /* border-radius: .125rem; */
+    border-radius: 0;
+    color: #FFFFFF;
+    background-color: #00a1ff !important;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    padding: .84rem 1.5rem;
+    font-size: .81rem;
+    float: right;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    /* min-width: 0; */
+    width: 100%;
+    max-width: 100%;
+}
+
+
+/* .tab-content .accordion i.fa-angle-down{
+    position: absolute;
+    right: 0;
+    top:8%;
+} */
+
+.tab-content .accordion i.fa-angle-down {
+    margin-left: .5rem;
+}
+
+.md-accordion .card.border {
+    border: 1px solid #e0e0e0;
+    padding: 0;
+}
+
+.md-accordion .card .card-header {
+    padding: 0!important;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.md-accordion .card .card-header>a {
+    display: flex;
+    position: relative;
+    padding: .5rem 1rem;
+}
+
+.md-accordion .card .collapse.show {
+    background-color: #f7f7f7;
+    margin-top: 1px;
+}
+
+.md-accordion .card a.collapsed span.desk-view:before {
+    content: "Ver";
+}
+
+.md-accordion .card a span.desk-view:before {
+    content: "Ocultar";
+}
+
+.md-accordion .card {
+    margin-bottom: .3rem;
+    border: none;
+    -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .05);
+}
+
+.creditos {
+    color: #999999;
+    font-size: .9rem;
+    display: block;
+    padding: .5rem 0 0 0;
+}
+
+.md-accordion .card .fa-angle-down {
+    padding-top: 3%;
+}
+
+.up-down {
+    width: 70%;
+    position: relative;
+    display: block;
+    padding: .64rem 0 0 0;
+}
+
+.loteria-dashboard hr {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    border: 0;
+    border-top: 1px solid rgb(227 235 243);
+    width: 100%;
+}
+
+.loteria-dashboard .header-navbar .navbar-container ul.nav li>a.nav-link {
+    /* padding: 1.8rem 1rem; */
+    font-size: .9rem;
+    line-height: .98rem !important;
+}
+
+.loteria-dashboard .header-navbar .navbar-container ul.nav li>a.nav-link {
+    padding: .84rem 2.14rem !important;
+}
+
+.loteria-dashboard.menu-collapsed .sticky-wrapper .navbar-container {
+    height: 100%!important;
+    position: absolute;
+}
+
+.loteria-dashboard.menu-collapsed .sticky-wrapper .navbar-container ul {
+    height: 100%!important;
+}
+
+
+/* .loteria-dashboard.menu-collapsed .sticky-wrapper .navbar-container ul > li > a i{
+    margin-top: 40%;
+} */
+
+.loteria-dashboard.menu-collapsed #main-menu-navigation li.nav-item .nav-link {
+    padding-top: 16px !important;
+}
+
+.loteria-dashboard .header-navbar {
+    position: relative;
+}
+
+.btn-collapsed {
+    position: absolute;
+    top: 4px;
+    right: -30px;
+    width: 30px;
+    height: 40px;
+    text-align: center;
+    line-height: 56px;
+    cursor: pointer;
+    z-index: 9999;
+    opacity: 0.8;
+    background-color: #145594!important;
+    border-radius: 0 25% 25% 0;
+}
+
+.btn-collapsed i {
+    display: block !important;
+}
+
+.loteria-dashboard.menu-expanded .btn-collapsed i:before {
+    /* font-family: simple-line-icons;
+    content: '\e606'; */
+    font-size: 1rem;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 30%;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+    transition: -webkit-transform .2s ease-in-out;
+}
+
+.loteria-dashboard.menu-collapsed .btn-collapsed i:before {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 30%;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transition: -webkit-transform .2s ease-in-out;
+}
+
+
+/* .btn-collapsed {
+    position: absolute;
+    top: 35%;
+    width: 54px;
+    height: 50px;
+    left: -54px;
+    text-align: center;
+    line-height: 56px;
+    cursor: pointer;
+} */
+
+.fixed-bottom,
+.fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+
+/* .loteria-dashboard .sticky-wrapper  {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-transition: width .25s,opacity .25s,-webkit-transform .25s;
+    -o-transition: width .25s,opacity .25s,-o-transform .25s;
+    -moz-transition: width .25s,opacity .25s,transform .25s,-moz-transform .25s;
+    transition: width .25s,opacity .25s,transform .25s;
+    transition: width .25s,opacity .25s,transform .25s,-webkit-transform .25s,-moz-transform .25s,-o-transform .25s;
+    width: 240px;
+    left: 0;
+    height: 100vh !important;
+    z-index: 9999;
+}
+
+.loteria-dashboard .sticky-wrapper  {
+    position: fixed;
+    top: 4.57rem;
+    height: -webkit-calc(100% - 4.57rem);
+    height: -moz-calc(100% - 4.57rem);
+    height: calc(100% - 4.57rem);
+}
+
+.loteria-dashboard .sticky-wrapper .header-navbar.navbar-expand-sm.navbar  {
+    position: relative;
+    height: 100%;
+}
+
+.loteria-dashboard .sticky-wrapper .header-navbar.navbar-expand-sm.navbar ul {
+    flex-direction: column !important;
+}
+
+.loteria-dashboard .sticky-wrapper .header-navbar.navbar-expand-sm.navbar ul li a {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left !important;
+}
+
+.loteria-dashboard .sticky-wrapper .header-navbar.navbar-expand-sm.navbar ul li a span {
+    display: inline-block;
+}
+
+.loteria-dashboard .sticky-wrapper .header-navbar.navbar-expand-sm.navbar ul li a i {
+    display: contents !important;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-right: 0;
+    margin-bottom: .5rem;
+    float: none;
+    position: relative;
+
+    margin-right: 12px!important;
+    top: 1px!important;
+} */
+
+.loteria-dashboard .sticky-wrapper.menu-vertical>div.vertical-right {
+    position: fixed !important;
+    top: 4.57rem !important;
+    height: -webkit-calc(100% - 4.57rem) !important;
+    height: -moz-calc(100% - 4.57rem) !important;
+    height: calc(100% - 4.57rem) !important;
+    z-index: 1000 !important;
+    display: table-cell;
+}
+
+.loteria-dashboard .sticky-wrapper.menu-vertical>div.vertical-right .main-menu-content {
+    height: 100%;
+    position: relative;
+}
+
+.loteria-dashboard .sticky-wrapper.menu-vertical>div.vertical-right .main-menu-content li {
+    position: relative;
+    white-space: nowrap;
+}
+
+.loteria-dashboard .sticky-wrapper.menu-vertical>div.vertical-right .main-menu-content .navbar-nav {
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.loteria-dashboard .sticky-wrapper.menu-vertical>div.vertical-right .main-menu-content .navbar-nav li a {
+    display: block !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left !important;
+}
+
+.loteria-dashboard .sticky-wrapper.menu-vertical>div.vertical-right .main-menu-content .navbar-nav>li>a i {
+    position: relative;
+    top: 1px;
+    /* display: contents !important; */
+    display: inline-block !important;
+}
+
+.loteria-dashboard .sticky-wrapper.menu-vertical>div.vertical-right .main-menu-content .navbar-nav>.dropdown i,
+.loteria-dashboard .sticky-wrapper.menu-vertical>div.vertical-right .main-menu-content .navbar-nav>.nav-item a i {
+    margin-right: .5rem !important;
+}
+
+.loteria-dashboard .loteria-dashboard .main-menu.menu-light .navigation>li.active>a {
+    border-right: 4px solid #4fb9ff;
+    background-color: #023877 !important;
+}
+
+.loteria-dashboard .sticky-wrapper.menu-vertical>div.vertical-right .main-menu-content .navbar-nav>.nav-item:hover>.dropdown-menu {
+    display: none;
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+}
+
+
+/* .vertical-overlay-menu .main-menu .navigation .navigation-header .ft-minus,
+body.loteria-dashboard.vertical-menu.menu-collapsed .main-menu .navigation>li.navigation-header span,
+body.loteria-dashboard.vertical-menu.menu-collapsed .main-menu .navigation>li>a>span,
+body.loteria-dashboard.vertical-menu.menu-collapsed .main-menu .navigation>li>ul {
+    display: none;
+} */
+
+.loteria-dashboard.vertical-menu .main-menu.menu-dark {
+    color: #DCDCDC;
+    background: #4a5157;
+}
+
+.loteria-dashboard.vertical-menu .main-menu.menu-dark .navigation {
+    background: #4a5157;
+}
+
+
+/* .loteria-dashboard.vertical-menu.menu-y .main-menu.menu-dark .navigation li a span {
+    display: none;
+}
+
+.vertical-overlay-menu.menu-y .main-menu .navigation .navigation-header .ft-minus,
+body.loteria-dashboard.vertical-menu.menu-y .main-menu .navigation>li.navigation-header span,
+body.loteria-dashboard.vertical-menu.menu-y .main-menu .navigation>li>a>span,
+body.loteria-dashboard.vertical-menu.menu-y .main-menu .navigation>li>ul {
+    display: none;
+} */
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.menu-v .navbar.header-navbar {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 1040;
+}
+
+.menu-v>.container-fluid {
+    margin-top: 90px;
+    padding-left: 78px !important;
+}
+
+.menu-v .menu-y {
+    margin-top: 6px;
+}
+
+.loteria-dashboard.menu-v .header-navbar.navbar-dark.navbar-border {
+    border-bottom: 3px solid #145594;
+}
+
+.navigation,
+.navigation .navigation-header {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.loteria-dashboard.menu-v .main-menu.menu-dark .navigation li a {
+    color: #FFFFFF;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.loteria-dashboard.menu-v .main-menu.menu-dark .navigation li.nav-item.has-sub:hover,
+.loteria-dashboard.menu-v .main-menu.menu-dark .navigation li.nav-item.has-sub:hover a {
+    color: #fff;
+    background-color: #232527 !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    /* font-size: .91rem; */
+}
+
+.loteria-dashboard.menu-v .main-menu.menu-dark .navigation>li.open>a {
+    color: #C3C3C3;
+    background: #262a2d !important;
+}
+
+.loteria-dashboard.menu-v .main-menu.menu-dark .navigation>li.open>ul {
+    color: #C3C3C3;
+    background: #121315 !important;
+}
+
+.loteria-dashboard.menu-v .main-menu.menu-dark .navigation>li.active>a {
+    color: #FFFFFF;
+    font-weight: 700;
+    background: #262a2d !important;
+    border-right: 4px solid #333333;
+}
+
+.loteria-dashboard.menu-v .main-menu.menu-dark .navigation>li.active>a i {
+    margin-right: .5rem;
+}
+
+.ps-theme-light {
+    -ms-touch-action: none;
+    touch-action: none;
+    overflow: hidden!important;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+}
+
+.loteria-dashboard .sticky-wrapper .header-navbar .navbar-container.ps-theme-light {
+    -ms-touch-action: none;
+    touch-action: none;
+    overflow: visible !important;
+    overflow-y: none!important;
+    -ms-overflow-style: none!important;
+}
+
+.loteria-dashboard.vertical-layout.vertical-menu.menu-expanded .main-menu .navigation li.has-sub>a:not(.mm-next):after {
+    content: '\f105';
+    font-family: FontAwesome;
+    font-size: 1rem;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+    transition: -webkit-transform .2s ease-in-out;
+}
+
+.loteria-dashboard.vertical-menu.menu-v.menu-expanded .main-menu .navigation li.has-sub>a:not(.mm-next):after {
+    font-family: simple-line-icons;
+    content: '\e606';
+    font-size: .8rem;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 11px;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+    transition: -webkit-transform .2s ease-in-out;
+}
+
+.loteria-dashboard.vertical-menu.menu-v.menu-expanded .main-menu .navigation li.open>a:not(.mm-next):after {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.loteria-dashboard.vertical-menu.menu-v .main-menu .navigation {
+    font-size: 1rem;
+    letter-spacing: .2px;
+    overflow-y: hidden;
+    padding-bottom: 20px;
+}
+
+.loteria-dashboard.vertical-menu.menu-v .main-menu.menu-dark .navigation>li>a {
+    padding: 8px 20px;
+}
+
+.loteria-dashboard.vertical-menu.menu-v.menu-expanded .main-menu {
+    width: 240px;
+    -webkit-transition: .3s ease all;
+    -o-transition: .3s ease all;
+    -moz-transition: .3s ease all;
+    transition: .3s ease all;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+/* .loteria-dashboard.vertical-menu.menu-v.menu-collapsed .main-menu .main-menu-content,
+    .loteria-dashboard.vertical-menu.menu-v.menu-collapsed .main-menu .navigation {
+        overflow: visible !important;
+    }
+    .loteria-dashboard.vertical-menu.menu-v.menu-collapsed .main-menu .navigation li:hover {
+        position: relative;
+    }
+
+    .loteria-dashboard.vertical-menu.menu-v.menu-collapsed .main-menu .navigation li:hover > ul {
+        display: block;
+        position: absolute;
+        right: -200px;
+        z-index: 10000;
+        opacity: 1;
+    } */
+
+.loteria-dashboard.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content a.menu-title,
+.loteria-dashboard.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content>span.menu-title,
+.main-menu-content>span.menu-title {
+    left: 60px;
+    width: 240px;
+    font-weight: 400;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: left;
+    background-color: #145594;
+    border-color: #145594;
+    padding: 14px 20px;
+    position: fixed;
+    /* top: 140px ; */
+    /* margin-top: 5rem; */
+    z-index: 9999;
+}
+
+.main-menu-content>ul.menu-content {
+    left: 60px;
+    width: 240px;
+    background-color: #373d42 !important;
+    -webkit-transition: visibility .25s, opacity .25s;
+    -o-transition: visibility .25s, opacity .25s;
+    -moz-transition: visibility .25s, opacity .25s;
+    transition: visibility .25s, opacity .25s;
+    -webkit-box-shadow: 25px 5px 75px 2px rgba(0, 0, 0, 0.03);
+    box-shadow: 25px 5px 75px 2px rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+    border-left: 1px solid rgba(0, 0, 0, 0.03);
+    /* margin-top: 5rem; */
+    z-index: 99999;
+}
+
+.main-menu .main-menu-content>ul.menu-content li {
+    white-space: nowrap;
+    position: relative;
+}
+
+.main-menu .main-menu-content>ul.menu-content li a {
+    color: #FFFFFF;
+    display: block;
+    padding: 8px 20px;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content>ul.menu-content li.has-sub>a:not(.mm-next):after,
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content ul li>ul.menu-content li.has-sub>a:not(.mm-next):after {
+    font-family: simple-line-icons;
+    content: '\e606';
+    font-size: .8rem;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 11px;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+    transition: -webkit-transform .2s ease-in-out;
+}
+
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content>ul.menu-content li.has-sub .has-sub>a:not(.mm-next):after {
+    top: 8px;
+}
+
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content>ul.menu-content li.open>a:not(.mm-next):after {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content>ul.menu-content li.hover>a,
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content>ul.menu-content li:hover>a {
+    -webkit-transform: translateX(4px);
+    -moz-transform: translateX(4px);
+    -ms-transform: translateX(4px);
+    -o-transform: translateX(4px);
+    transform: translateX(4px);
+}
+
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content>ul.menu-content li.hover>a>a,
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content>ul.menu-content li:hover>a>a {
+    -webkit-transform: translateX(-4px);
+    -moz-transform: translateX(-4px);
+    -ms-transform: translateX(-4px);
+    -o-transform: translateX(-4px);
+    transform: translateX(-4px);
+}
+
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .navigation>li.navigation-header {
+    padding: 22px 20px 8px;
+}
+
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .navigation>li.navigation-header .ft-minus {
+    display: block;
+    font-size: 1.3rem;
+}
+
+.vertical-overlay-menu .main-menu .navigation .navigation-header .ft-minus,
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .navigation>li.navigation-header span,
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .navigation>li>a>span,
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .navigation>li>ul {
+    display: none;
+}
+
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .navigation>li>a {
+    padding: 10px 0 10px 18px
+}
+
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .navigation>li>a>span {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: -240px;
+    width: 240px;
+    font-weight: 600;
+    color: #FFF;
+    text-align: left;
+    background-color: #967ADC;
+    border-color: #967ADC;
+    padding: 14px 20px;
+}
+
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .navigation>li>a>i {
+    margin-right: 0;
+    font-size: 1.4rem;
+    line-height: 1;
+    visibility: visible;
+    opacity: 1;
+}
+
+body.vertical-layout.vertical-menu.menu-collapsed .navbar-brand-center .content,
+body.vertical-layout.vertical-menu.menu-collapsed .navbar-brand-center .footer {
+    margin-left: 0;
+}
+
+body.vertical-layout.vertical-menu.menu-collapsed.menu-flipped .content,
+body.vertical-layout.vertical-menu.menu-collapsed.menu-flipped .footer,
+body.vertical-layout.vertical-menu.menu-collapsed.menu-flipped .navbar .navbar-container {
+    margin: 0 60px 0 0;
+}
+
+@media (min-width:576px) {
+    body.vertical-layout.vertical-menu.menu-collapsed.menu-flipped .main-menu {
+        right: 0
+    }
+    body.vertical-layout.vertical-menu.menu-collapsed.menu-flipped .main-menu span.menu-title {
+        right: 60px
+    }
+    body.vertical-layout.vertical-menu.menu-collapsed.menu-flipped .main-menu ul.menu-content {
+        right: 60px;
+        left: inherit
+    }
+}
+
+body.vertical-layout.vertical-menu.menu-collapsed.menu-flipped .navbar .navbar-header {
+    float: right
+}
+
+[data-textdirection=rtl] body.vertical-layout.vertical-menu.menu-collapsed .main-menu .navigation>li>a {
+    padding: 14px 16px!important
+}
+
+[data-textdirection=rtl] body.vertical-layout.vertical-menu.menu-collapsed .main-menu .navigation>li.navigation-header .ft-minus {
+    padding: 12px 0
+}
+
+@media (min-width:992px) {
+    body.vertical-layout.vertical-menu.menu-flipped .content,
+    body.vertical-layout.vertical-menu.menu-flipped .footer,
+    body.vertical-layout.vertical-menu.menu-flipped .navbar .navbar-container {
+        margin: 0 240px 0 0
+    }
+    body.vertical-layout.vertical-menu.menu-flipped .navbar .navbar-header {
+        float: right
+    }
+}
+
+@media (max-width:991.98px) {
+    body.vertical-layout.vertical-menu .main-menu {
+        width: 60px
+    }
+    body.vertical-layout.vertical-menu .main-menu .main-menu-footer {
+        width: 240px;
+    }
+}
+
+.loteria-dashboard.menu-collapsed .sticky-wrapper .navbar-container ul.nav li ul.dropdown-menu {
+    height: auto!important;
+    /* margin-bottom: -27px; */
+}
+
+.main-menu-content ul.navigation {
+    float: none!important;
+}
+
+
+/* .tab-content .accordion i.fa-angle-down{
+    position: absolute;
+    right: 0;
+    top:8%;
+} */
+
+body.vertical-layout.vertical-menu.menu-collapsed .navbar.bg-loteria-blue-dark .navbar-brand {
+    padding: 0!important;
+    padding-top: .3125rem!important;
+    padding-bottom: .3125rem!important;
+}
+
+.card .card-title.h6 {
+    font-weight: 500;
+    letter-spacing: .05rem;
+    font-size: .9rem;
+}
+
+.loteria-dashboard .table {
+    color: #666666;
+}
+
+.loteria-dashboard .bg-info {
+    background-color: #00b3f1 !important;
+}
+
+.loteria-dashboard .card {
+    border-radius: .5rem !important;
+}
+
+.loteria-dashboard .btn-dark {
+    color: #fff;
+    background-color: #4a5157 !important;
+}
+
+.loteria-dashboard .creditos-counter {
+    display: block;
+    /* float: right; */
+    padding-right: 10px;
+    height: 100%;
+    position: relative;
+    left: auto;
+    font-size: 11px;
+    color: #666666;
+    /* background-color: #00b3f1; */
+}
+
+.loteria-dashboard .creditos-counter p,
+.loteria-dashboard .creditos-counter span {
+    color: #666666;
+}
+
+
+/* .loteria-dashboard .creditos-counter span {
+    background: 50% 100% / 50% 50% no-repeat
+                radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 10vw;
+    font-family: "Source Sans Pro", sans-serif;
+    animation: reveal 3000ms ease-in-out forwards 200ms,
+               glow 2500ms linear infinite 2000ms;
+
+    @keyframes reveal {
+      80%{
+        letter-spacing: 8px;
+      }
+      100% {
+        background-size: 300% 300%;
+      }
+    }
+    @keyframes glow {
+      40% {
+        text-shadow: 0 0 8px #fff;
+      }
+    }
+  }   */
+
+
+/* .loteria-dashboard .creditos-counter {
+    margin: 0;
+    font-size: 8em;
+    padding: 0;
+    text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
+      0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1),
+      0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1),
+      -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);} */
+
+.loteria-dashboard .creditos-counter span {
+    transform: scale(0.8);
+    display: inline-block;
+}
+
+.loteria-dashboard .creditos-counter span {
+    animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+}
+
+@keyframes bop {
+    0% {
+        transform: scale(0.8);
+    }
+    50%,
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bopB {
+    0% {
+        transform: scale(0.8);
+    }
+    80%,
+    100% {
+        transform: scale(1);
+    }
+}
+
+*/
+/* .loteria-dashboard .creditos-counter #effect{
+    position:absolute;
+    left:0;
+    right:0;
+    margin:0 auto;
+   }
+
+   @keyframes heartFadeInOut  {
+    0% {transform: scale(1);}
+    25% {transform: scale(.97);}
+    35% {transform: scale(.9);}
+    45% {transform: scale(1.1);}
+    55% {transform: scale(.9);}
+    65% {transform: scale(1.1);}
+    75% {transform: scale(1.03);}
+    100% {transform: scale(1);}
+  }
+
+  .loteria-dashboard .creditos-counter span.limite {
+    animation-name: heartFadeInOut;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+  } */
+
+
+/* #heart span{
+    position:absolute;
+    left:0;
+    right:0;
+    margin:0 auto;
+   }
+
+   @keyframes heartFadeInOut {
+    0% {transform: scale(1);}
+    25% {transform: scale(.97);}
+    35% {transform: scale(.9);}
+    45% {transform: scale(1.1);}
+    55% {transform: scale(.9);}
+    65% {transform: scale(1.1);}
+    75% {transform: scale(1.03);}
+    100% {transform: scale(1);}
+  }
+
+  #heart span {
+    animation-name: heartFadeInOut;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+  } */
+
+.pulse {
+    /* Chrome, Safari, Opera */
+    -webkit-animation: pulse 1s infinite;
+    /* Internet Explorer */
+    -ms-animation: pulse 1s infinite;
+    /* Standard Syntax */
+    animation: pulse 1s infinite;
+}
+
+
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes pulse {
+    0% {
+        color: #00b3f1;
+    }
+    110% {
+        color: #666666;
+    }
+}
+
+
+/* Internet Explorer */
+
+@-ms-keyframes pulse {
+    0% {
+        color: #00b3f1;
+    }
+    110% {
+        color: #666666;
+    }
+}
+
+
+/* Standard Syntax */
+
+@keyframes pulse {
+    0% {
+        color: #00b3f1;
+    }
+    110% {
+        color: #666666;
+    }
+}
+
+.loteria-dashboard .btn-collapsed>div.arrow-right {
+    display: block;
+    margin: 0 auto;
+    width: 21px;
+    height: 96px;
+    margin-top: -38px;
+    margin-left: 26px;
+    ;
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+}
+
+.loteria-dashboard .btn-collapsed>div.arrow-left {
+    display: none;
+}
+
+.loteria-dashboard .btn-collapsed.is-active>div.arrow-left {
+    display: block;
+    margin: 0 auto;
+    width: 21px;
+    height: 96px;
+    margin-top: -34px;
+    margin-left: -46px;
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+
+.loteria-dashboard .btn-collapsed.is-active>.arrow-right {
+    display: none;
+}
+
+.m_scroll_arrows {
+    display: block;
+    width: 5px;
+    height: 5px;
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    margin: 0 0 3px 4px;
+    width: 9px;
+    height: 9px;
+}
+
+.arrow-1 {
+    margin-top: 1px;
+}
+
+.arrow-1,
+.arrow-2,
+.arrow-2 {
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+}
+
+.arrow-1 {
+    -webkit-animation-delay: .1s;
+    -moz-animation-delay: .1s;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    animation-delay: alternate;
+}
+
+.arrow-2 {
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -webkit-animation-direction: alternate;
+    animation-delay: .2s;
+    animation-direction: alternate;
+    margin-top: -6px;
+}
+
+.arrow-2 {
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    -webkit-animation-direction: alternate;
+    animation-delay: .3s;
+    animation-direction: alternate;
+    margin-top: -6px;
+}
+
+@-webkit-keyframes mouse-scroll {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes mouse-scroll {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes mouse-scroll {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes mouse-scroll {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body.vertical-layout.vertical-menu.menu-expanded .content,
+body.vertical-layout.vertical-menu.menu-expanded .footer,
+body.vertical-layout.vertical-menu.menu-expanded .navbar .navbar-container {
+    margin-left: 240px;
+    margin-top: 80px;
+}
+
+body.vertical-layout.vertical-menu.menu-collapsed .content,
+body.vertical-layout.vertical-menu.menu-collapsed .footer,
+body.vertical-layout.vertical-menu.menu-collapsed .navbar .navbar-container {
+    margin-left: 60px;
+    margin-top: 80px;
+}
+
+
+/*Botones*/
+
+.box-button-normal {
+    width: 140px;
+    height: 45px;
+    font-family: "Audiowide", sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.box-button-normal:active,
+.box-button-normal:focus {
+    outline: 0;
+    border: none;
+}
+
+.box-button-normal:hover {
+    background-color: #027abf0a;
+    transform: translateY(-3px);
+}
+
+.box-button-aceptar {
+    width: 140px;
+    height: 45px;
+    font-family: "Audiowide", sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.box-button-aceptar:hover {
+    background-color: #027bbf;
+    box-shadow: 0px 15px 20px #027abf80;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.box-button-aceptar:active,
+.box-button-aceptar:focus {
+    outline: 0;
+    border: none;
+}
+
+.box-button-cancelar {
+    width: 140px;
+    height: 45px;
+    font-family: "Audiowide", sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.box-button-cancelar:hover {
+    background-color: #dd2622;
+    box-shadow: 0px 15px 20px #dd252281;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.box-button-cancelar:active,
+.box-button-cancelar:focus {
+    outline: 0;
+    border: none;
+}
+
+
+/*Modal*/
+
+
+/* .modal-content{
+        width: 80%;
+    } */
+
+tr {
+    margin-right: 5px !important;
+}
+
+.loteria-dashboard .close {
+    /* background: rgba(255, 255, 255, 0.445) !important; */
+    margin: 1px !important;
+    margin-right: 0px;
+    content: "\274c";
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.loteria-dashboard .close:hover {
+    outline: 0;
+    border: none;
+    /* background-color: white !important; */
+    color: #FFFFFF;
+}
+
+.divisor-tiempo {
+    display: none;
+}
+
+.modal-header {
+    background: #145594;
+    width: 100% !important;
+}
+
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link,
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+    color: #145594;
+    -webkit-transition: .35s;
+    transition: .35s;
+    font-weight: 700;
+}
+
+.loteria-dashboard .nav-item .nav-link.dropdown-toggle img {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #145594;
+}
+
+.loteria-dashboard .modal-title {
+    color: white;
+    vertical-align: middle !important;
+}
+
+.Horario-Materia-titulo {
+    float: none;
+}
+
+.Horario-Materia-titulo,
+.Horario-Materia {
+    float: none;
+    color: #07afef!important;
+}
+
+.loteria-dashboard .modal-body .Horario-Materia {
+    font-weight: 400 !important;
+}
+
+th {
+    background: rgba(0, 0, 0, 0);
+}
+
+.loteria-dashboard .modal-body table th {
+    color: #666666;
+    font-weight: 600 !important;
+}
+
+.loteria-dashboard .modal-body .table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #73d2f6;
+}
+
+.table-loteria thead.info-color-dark {
+    background-color: #ffffff !important;
+}
+
+.table-loteria thead.info-color-dark th {
+    color: #145594!important;
+    font-weight: 700!important;
+    border-bottom: 2px solid #145594;
+}
+
+.table.table-loteria th,
+.table td {
+    padding: .75rem;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+}
+
+
+/*En telefonos*/
+
+@media(max-device-width: 480px) {
+    .Horario-Materia-titulo {
+        float: none;
+        left: 0;
+        position: sticky;
+        z-index: 9999;
+        width: 20px;
+        font-size: 15px;
+        background: #027bbf;
+        /* Background color */
+        color: white;
+        /* Stick to the left */
+        vertical-align: middle !important;
+    }
+    .Horario-Materia {
+        float: none;
+        left: 0;
+        position: sticky;
+        z-index: 9999;
+        width: 20px;
+        font-size: 15px;
+        background: #027bbf;
+        /* Background color */
+        color: white;
+        /* Stick to the left */
+        vertical-align: middle !important;
+        /* Displayed on top of other rows when scrolling */
+    }
+    .Horario-Materia-titulo-sticky {
+        vertical-align: middle !important;
+        background: #027bbf;
+        text-align: center;
+        /* Stick to the left */
+        color: white;
+        /* Displayed on top of other rows when scrolling */
+    }
+    .divisor-tiempo {
+        display: inline !important;
+    }
+    td {
+        vertical-align: middle !important;
+    }
+    .table-responsive {
+        width: 100% !important;
+        margin: 1px !important;
+    }
+    .modal-dialog {
+        position: relative;
+        width: auto;
+        margin: .1rem !important;
+        pointer-events: none;
+    }
+    .modal-body .container-fluid {
+        width: 100%;
+        /* padding-right: 4px; */
+        padding-left: 5px;
+        margin-right: 1px;
+        margin-left: auto;
+    }
+    .table-responsive {
+        width: 90%;
+    }
+}
+
+.horas {
+    margin: 2px !important;
+}
+
+body.vertical-layout.vertical-menu.menu-collasep-inicio .main-menu {
+    width: 60px!important;
+    -webkit-transform: translateZ(-160px) translateX(-160px);
+    -moz-transform: translateZ(-160px) translateX(-160px);
+    transform: translateZ(-160px) translateX(-160px);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: .3s ease all;
+    -o-transition: .3s ease all;
+    -moz-transition: .3s ease all;
+    transition: .3s ease all;
+}
+
+
+/* XMera logo */
+
+.xmera {
+    position: absolute;
+    right: 150px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 160px!important;
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+body.vertical-layout.vertical-menu.menu-collapsed .navbar.bg-loteria-blue-dark .navbar-brand.xmera {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+.content-box {
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+.content-box img {
+    position: absolute;
+    z-index: 3;
+    display: block;
+    width: 100%;
+    max-width: 120px;
+    /* margin: 0 auto; */
+    top: 1rem;
+    left: 1.2rem;
+}
+
+.box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: skew(-25deg);
+    background: #fff;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU3JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYWVhZWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #fff 0%, #fff 57%, #eaeaea 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(57%, #fff), color-stop(100%, #eaeaea));
+    background: -webkit-linear-gradient(top, #fff 0%, #fff 57%, #eaeaea 100%);
+    background: -o-linear-gradient(top, #fff 0%, #fff 57%, #eaeaea 100%);
+    background: -ms-linear-gradient(top, #fff 0%, #fff 57%, #eaeaea 100%);
+    background: linear-gradient(to bottom, #fff 0%, #fff 57%, #eaeaea 100%);
+    -pie-background: linear-gradient(top, #fff 0%, #fff 57%, #eaeaea 100%);
+    z-index: 2;
+}
+
+.box-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: skew(-25deg);
+    background: #333;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU3JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYWVhZWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #333 0%, #333 57%, #383838 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333), color-stop(57%, #333), color-stop(100%, #383838));
+    background: -webkit-linear-gradient(top, #333 0%, #333 57%, #383838 100%);
+    background: -o-linear-gradient(top, #333 0%, #333 57%, #383838 100%);
+    background: -ms-linear-gradient(top, #333 0%, #333 57%, #383838 100%);
+    background: linear-gradient(to bottom, #333 0%, #333 57%, #383838 100%);
+    -pie-background: linear-gradient(top, #333 0%, #333 57%, #383838 100%);
+    z-index: 1;
+}
+
+.box-shadow:before,
+.box-shadow:after {
+    content: " ";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 15px;
+}
+
+.box-shadow:before {
+    box-shadow: -15px 0 15px -15px inset;
+    left: -15px;
+}
+
+.box-shadow:after {
+    box-shadow: 15px 0 15px -15px inset;
+    right: -15px;
+}
+
+
+/* XMera logo */
+
+.loteria-password .card-header {
+    background: #145594;
+    width: 100% !important;
+}
+
+.loteria-password .card-header h3 {
+    color: #FFFFFF;
+}
+
+.loteria-password .md-form i {
+    color: #145594;
+}
+
+.form-check-input[type="checkbox"].filled-in:checked+label:after,
+label.btn input[type="checkbox"].filled-in:checked+label:after {
+    top: 0;
+    z-index: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #145594;
+    border: 2px solid #145594;
+}
+
+.form-check-input[type="checkbox"].filled-in:not(:checked)+label:after,
+label.btn input[type="checkbox"].filled-in:not(:checked)+label:after {
+    top: 0;
+    z-index: 0;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid #145594;
+}
+
+.form-check-input[type="checkbox"]+label,
+label.btn input[type="checkbox"]+label {
+    color: #888888;
+}
+
+.jugada .form-group label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    color: #777777;
+}
+
+.loteria-dashboard .modal-body table thead th {
+    color: #FFFFFF;
+    font-weight: 600 !important;
+}
+
+.loteria-dashboard .modal-body table th {
+    color: #777777;
+    font-weight: 600 !important;
+}
+
+.loteria-dashboard .modal-body .table thead th {
+    vertical-align: bottom;
+    border-bottom: 0;
+}
+
+table tr:last-child td,
+.table tr:last-child th {
+    padding: .75rem;
+    vertical-align: middle!important;
+    border-top: none;
+}
+
+.loteria-dashboard .cdk-overlay-pane {
+    width: 70%!important;
+}
+
+
+/* .cdk-overlay-container {
+    z-index: 0!important;
+} */
+
+.cdk-overlay-container {
+    z-index: 9000!important;
+}
+
+.table thead{ border-radius: .5rem;}
+.table thead th:last-child{ border-radius: 0 .5rem .5rem 0;}
+.table thead th:first-child{ border-radius: .5rem 0 0 .5rem;}
+
+.form-row .btn{height: calc(1.5em + 0.75rem + 2px);}
+
+.cdk-global-scrollblock {
+    position: fixed!important;
+    width: 100%!important;
+    overflow: hidden!important;
+    overflow-y: auto!important;
+    height: 100%!important;
+}
+
+@media (max-width: 767px) {
+    .navbar.header-navbar .nav-link i {
+        display: block;
+    }
+    .main-menu.menu-light .navigation li a span {
+        line-height: 1.2;
+    }
+    .main-menu.menu-light .navigation li a span br {
+        display: none;
+    }
+    .main-menu.menu-light .navigation li,
+    .main-menu.menu-light .navigation li a,
+    .main-menu.menu-light .navigation li a span {
+        font-size: 0.9rem;
+    }
+    .horizontal-top-icon-menu #main-menu-navigation li.nav-item .nav-link {
+        text-align: center;
+    }
+    .horizontal-top-icon-menu #main-menu-navigation li.nav-item .nav-link i {
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-right: 0;
+        margin-bottom: .5rem;
+        float: none;
+    }
+    .main-menu.menu-dark .navigation>li>a i,
+    .main-menu.menu-light .navigation>li>a i {
+        position: relative;
+        top: 1px;
+    }
+    .loteria-dashboard.vertical-overlay-menu .main-menu .navigation li.has-sub>a:not(.mm-next):after,
+    .loteria-dashboard.vertical-menu.menu-v .main-menu .navigation li.has-sub>a:not(.mm-next):after {
+        font-family: simple-line-icons;
+        content: '\e606';
+        font-size: .6rem;
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 11px;
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+        transition: -webkit-transform .2s ease-in-out;
+    }
+    .loteria-dashboard.vertical-overlay-menu .main-menu .navigation li.open>a:not(.mm-next):after {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    .loteria-dashboard .main-menu.menu-light .navigation li>ul li a,
+    .loteria-dashboard .main-menu.menu-light .navigation>li.active>ul li a {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        color: #023877;
+        background: #f5f5f5;
+    }
+    .main-menu.menu-fixed {
+        top: 4.5rem;
+    }
+    .loteria-dashboard>.container-fluid,
+    .loteria-dashboard>.container-sm,
+    .loteria-dashboard>.container-md,
+    .loteria-dashboard>.container-lg,
+    .loteria-dashboard>.container-xl {
+        margin-top: 6rem;
+    }
+    .loteria-dashboard .sticky-wrapper .main-menu {
+        top: 70px !important;
+        z-index: 999 !important;
+        padding-top: 6px;
+    }
+    .loteria-dashboard .perfil {
+        display: none;
+    }
+    .px-3-66 {
+        padding-left: 0.43rem!important;
+        padding-right: 0.43rem !important;
+    }
+    .loteria-dashboard .btn[class*="btn-outline-"].btn-md {
+        padding-top: .40rem;
+        padding-bottom: .38rem;
+    }
+    .nav-link.dropdown-toggle.mt-2 {
+        margin-top: 0.1rem !important;
+    }
+    .loteria-dashboard .navbar.header-navbar {
+        /* width: 1384px; */
+        position: fixed;
+        top: 0px;
+        z-index: 999;
+    }
+    .loteria-dashboard.menu-vertical .main-menu.menu-y {
+        display: none!important;
+    }
+    .menu-v>.container-fluid {
+        margin-top: 80px;
+        padding-left: 15px!important;
+    }
+    .loteria-dashboard.menu-v.mobile>.container-fluid {
+        margin-top: 80px;
+        padding-left: 15px!important;
+    }
+    .menu-v .menu-y {
+        margin-top: 0px!important;
+    }
+    body.vertical-layout.vertical-menu .main-menu {
+        width: 240px!important;
+    }
+    .main-menu-content ul.navigation {
+        display: block!important;
+    }
+    h2,
+    .h2 {
+        font-size: 1.3rem;
+    }
+    .h-title {
+        color: #FFFFFF;
+        margin-top: 0!important;
+    }
+    .header-title {
+        display: flex;
+        background-color: #da2623;
+        color: #FFFFFF;
+        margin-right: -15px;
+        margin-left: -15px;
+        margin-top: 0px!important;
+        margin-bottom: 0;
+        padding: 1rem;
+    }
+    .time-sm-device {
+        display: block!important;
+    }
+    .time-desktop {
+        display: none!important;
+    }
+    .periodo {
+        width: 70%!important;
+        font-size: .9rem!important;
+        padding-right: 5px!important;
+        padding-left: 5px!important;
+        padding-top: .5rem!important;
+    }
+    .desk-view {
+        display: none!important;
+    }
+    .c-selecionados,
+    .c-limite {
+        font-size: .8rem!important;
+        line-height: .8rem!important;
+        padding-right: 0px!important;
+        padding-left: 0px!important;
+        text-align: center!important;
+        padding-top: .5rem!important;
+        color: #FFFFFF!important;
+    }
+    .c-selecionados {
+        padding-top: .9rem!important;
+    }
+    .detail-credit {
+        padding-right: 5px!important;
+        padding-left: 5px!important;
+        background-color: #da2623;
+    }
+    .detail .row .col .row div:nth-child(3) {
+        border-left: 1px solid #FFFFFF !important;
+    }
+    .c-selecionados strong,
+    .c-limite strong {
+        display: block;
+        text-align: center;
+        padding: .5rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .pb-0-mobile {
+        padding-bottom: 0!important;
+    }
+    .mb-0-mobile {
+        margin-bottom: 0!important;
+    }
+    .accordion.md-accordion .card {
+        margin-bottom: .5rem!important;
+    }
+    .mobile .card-body .card-title {
+        margin-bottom: .5rem!important;
+        font-size: 1rem;
+    }
+    /* .chronometer.time-sm-device{
+        height: auto!important;
+        position: absolute!important;
+        bottom: -37px!important;
+        right: 0px!important;
+        padding: .4rem .6rem;
+        background-color: #da2623;
+        border-radius: 0 0 0 15px;
+        opacity: .8;
+    } */
+    .chronometer.time-sm-device {
+        height: auto!important;
+        position: fixed;
+        right: 0px!important;
+        padding: .4rem .6rem;
+        background-color: #da2623;
+        border-radius: 0 0 0 15px;
+        opacity: .8;
+        top: 64px;
+        z-index: 99999;
+    }
+    .mobile .accordion.md-accordion .card-header {
+        padding-right: 0px!important;
+        padding-top: .2rem;
+    }
+    .mobile .table-wrapper {
+        margin-left: -7px;
+        margin-right: -7px;
+    }
+    .mobile .table-wrapper .table {
+        margin-bottom: 0!important;
+    }
+    .mobile .tab-content {
+        padding-left: 2px!important;
+        padding-right: 2px!important;
+    }
+    .mobile-view {
+        display: block!important;
+        padding: .5rem;
+    }
+    .md-accordion .card .card-header>a i {
+        font-size: 1.5rem;
+        margin-top: .5rem;
+    }
+    .md-accordion .card .card-header>a {
+        display: flex;
+        position: relative;
+        padding: .5rem!important;
+    }
+    .tab-content .accordion i.fa-angle-down {
+        margin-left: 0!important;
+        float: none!important;
+    }
+    .md-accordion .card .card-header>a label.mobile-view {
+        position: absolute;
+        z-index: 1;
+        display: inline-block;
+        padding: 0;
+        margin: 0 10px !important;
+        overflow: hidden;
+        vertical-align: middle;
+        cursor: pointer;
+        border-radius: 50%;
+        -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        width: 37px;
+        height: 37px;
+        /* float:right; */
+        right: 0;
+    }
+    .up-down {
+        width: 80%!important;
+        position: relative;
+        display: block;
+        padding: 0!important;
+    }
+    .card .card-body .col-12.px-0 {
+        padding: 0 13px !important;
+    }
+    .mobile .col-lg-8.col-md-12.col-sm-12.pl-0 {
+        padding-left: 15px !important;
+    }
+    .mobile .col-12.px-1 {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .loteria-dashboard .navbar .navbar-brand img {
+        height: auto;
+        width: 100% !important;
+    }
+    .timer.count-title.count-number {
+        margin-bottom: 0!important;
+    }
+    .loteria-dashboard .creditos-counter {
+        padding-right: 5px;
+    }
+    .loteria-dashboard .container-fluid.mobile .col-lg-9,
+    .loteria-dashboard .container-fluid.mobile .header-title {
+        width: 100% !important;
+    }
+    .loteria-dashboard .container-fluid.mobile .col-lg-9 {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    .loteria-dashboard .container-fluid.mobile .header-title {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    .loteria-dashboard .container-fluid.mobile .header-title h2 {
+        margin-bottom: 0 !important;
+    }
+    .loteria-dashboard .container-fluid.mobile .periodo.justify-content-end {
+        -ms-flex-pack: end !important;
+        justify-content: flex-start!important;
+    }
+    .loteria-dashboard .container-fluid.mobile.mt-mobile {
+        margin-top: 78px!important;
+    }
+    .loteria-dashboard .container-fluid.mobile.mt-mobile .header-title {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #145594;
+        color: #FFFFFF;
+        /* margin-right: -15px!important;
+        margin-left: -15px!important; */
+        margin-top: 0px!important;
+        margin-bottom: 0;
+        padding: 1rem;
+    }
+    .loteria-dashboard .container-fluid.mobile.mt-mobile .container-fluid.mt-3 {
+        margin-top: 0px!important;
+    }
+    .card-header.detail {
+        margin-bottom: 0px;
+        background-color: transparent;
+    }
+    /* .loteria-dashboard .container-fluid.mobile.mt-mobile .header-title {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #037ccc;
+        color: #FFFFFF;
+        margin-right: -15px!important;
+        margin-left: -15px!important;
+        margin-top: 0px!important;
+        margin-bottom: 0;
+        padding: 1rem;
+    } */
+    .loteria-dashboard .creditos-counter {
+        float: right;
+    }
+    .xmera {
+        position: absolute;
+        right: 104px;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        max-width: 82px!important;
+        padding-top: 0!important;
+        padding-bottom: 0!important;
+    }
+    .content-box img {
+        position: absolute;
+        z-index: 2;
+        display: block;
+        width: 100%;
+        max-width: 120px;
+        /* margin: 0 auto; */
+        top: 1.4rem;
+        left: 0.5rem;
+    }
+    .logo-loteria {
+        position: absolute;
+        left: 3rem;
+        width: 74px;
+    }
+    .btn {
+        font-size: .8rem!important;
+    }
+    .lm-title {
+        position: relative;
+    }
+    .lm-title h2 {
+        display: inline-block;
+        font-size: 1.1rem;
+    }
+    .lm-title .btn {
+        display: inline-block;
+        font-size: .8rem!important;
+        margin: 0!important;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 0;
+        height: 100%;
+    }
+    .gj-datepicker {
+        width: 100%!important;
+        margin-top: .5rem!important;
+        margin-bottom: 0!important;
+        padding-right: .4rem;
+    }
+    .nav-item.pt-1 {
+        padding-top: 0!important;
+    }
+    .loteria-dashboard .cdk-overlay-pane {
+        width: 96%!important;
+        max-width: 96%!important;
+    }
+}
+
+.mat-dialog-container {
+    box-shadow: none!important;
+    background: transparent!important;
+    color: transparent!important;
+}
+
+.md-toast-success {
+    background-color: transparent;
+    background-image: none;
+}
+
+
+/*
+	Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
+	*/
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+    
+}
+
+
+/*
+	Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
+	*/
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+   
+}
+
+@media only screen and (max-width: 430px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+    
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,600,700");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+body.loteria-dashboard.mantenimiento {
+    background-image: none!important;
+    background: rgb(0, 54, 121)!important;
+    background: linear-gradient(326deg, rgba(0, 54, 121, 1) 0%, rgba(0, 54, 121, 1) 58%, rgba(1, 29, 64, 1) 100%)!important;
+    height: auto!important;
+}
+
+body.loteria-dashboard.mantenimiento h1,
+body.loteria-dashboard.mantenimiento h3,
+body.loteria-dashboard.mantenimiento h5 {
+    font-family: "Montserrat", sans-serif!important;
+    font-weight: 300!important;
+}
+
+.bg-transparent {
+    background-color: transparent!important;
+    box-shadow: none!important;
+}
+
+.loteria-dashboard .modal-body .materia-estado thead th {
+    color: #00a1ff!important;
+}
+
+.loteria-dashboard .modal-body .materia-estado thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #00a1ff;
+}
+
+.loteria-dashboard .modal-body .materia-estado thead th,
+.loteria-dashboard .modal-body .materia-estado tbody td {
+    text-align: left;
+}
+
+table.materia-estado tr:last-child td,
+.table.materia-estado tr:last-child th {
+    padding-top: 1.1rem;
+    padding-bottom: 1rem;
+    vertical-align: top;
+    border-top: none;
+}
+
+.loteria-dashboard .modal-body .page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff!important;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+var {
+    font-style: normal;
+}
+
+.text-dark {
+    color: #4a5157 !important;
+}
+
+p.leyenda {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    font-size: 0.9rem !important;
+}
+
+p.leyenda .icon {
+    position: relative;
+    margin-right: 5px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+p.leyenda .icon:last-child {
+    margin-left: 10px;
+}
+
+.blob {
+    background: #00a1ff;
+    border-radius: 50%;
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    transform: scale(1);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(126, 89, 89, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+
+/* .blob {
+	background: #00a1ff;
+	border-radius: 50%;
+	margin: 10px;
+	height: 20px;
+	width: 20px;
+
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(30, 162, 214, 0.301);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+} */
+
+.gj-datepicker-bootstrap [role=right-icon] button {
+    color: #145594!important;
+    width: 38px;
+    position: relative;
+    border: 1px solid #ced4da!important;
+    padding: 4px;
+    box-shadow: none;
+    margin: 0;
+}
+
+.input-group-append .btn,
+.input-group-prepend .btn {
+    position: relative;
+    z-index: 2;
+}
+
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+    -webkit-appearance: button;
+}
+
+.border-left-0 {
+    border-left: 0!important;
+}
+
+.btn-outline-secondary {
+    color: #6c757d;
+    background-color: transparent;
+    background-image: none;
+    border-color: #6c757d;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.input-group-append {
+    margin-left: -1px;
+}
+
+.input-group-prepend,
+.input-group-append {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.btn-rounded {
+    border-radius: 10em;
+}
+
+.table th,
+.table td {
+    vertical-align: middle !important;
+}

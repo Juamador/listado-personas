@@ -1,0 +1,6 @@
+@media (min-width: 992px){
+  .aside-fixed[data-kt-aside-minimize=on] .wrapper {
+      transition: padding-left .3s ease;
+      padding-left: 100px;
+  }
+}

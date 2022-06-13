@@ -1,0 +1,30 @@
+.layout-sidebar-large .sidebar-left .navigation-left .nav-item .nav-item-hold {
+    width: 80%;
+    margin: 0.8rem!important;
+    padding: 18px 0!important;
+}
+
+.layout-sidebar-large .sidebar-left .navigation-left .nav-item.active .nav-item-hold,
+.layout-sidebar-large .sidebar-left .navigation-left .nav-item:hover .nav-item-hold {
+    display: block;
+    width: 80%;
+    margin: 0.8rem;
+    padding: 18px 0;
+    color: #ffffff;
+    background-image: linear-gradient(310deg,#f5365c,#f56036);
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px 1px rgb(0 0 0 / 6%), 0 1px 4px rgb(0 0 0 / 8%);
+    transition: all 0s;
+    -webkit-transition: all 0s;
+    -o-transition: all 0s;
+    -moz-transition: all 0s;
+}
+
+.layout-sidebar-large .sidebar-left .navigation-left .nav-item {
+    position: relative;
+    display: block;
+    width: 100%;
+    color: #332e38;
+    cursor: pointer;
+    border-bottom: none;
+}

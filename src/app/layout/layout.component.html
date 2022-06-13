@@ -1,0 +1,28 @@
+<app-sidebar></app-sidebar>
+<div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
+    <!-- <app-navbar></app-navbar> -->
+    <!--begin::Content-->
+    <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+        <!--begin::Container-->
+        <div class="container-xxl" id="kt_content_container">
+            <ng-content></ng-content>
+        </div>
+        <!--end::Container-->
+    </div>
+    <!--end::Content-->
+    <!--begin::Footer-->
+    <div class="footer py-4 d-flex flex-lg-column text-center" id="kt_footer" style="text-align: center !important;">
+        <!--begin::Container-->
+        <div class="container-xxl d-flex flex-column flex-md-row flex-stack">
+            <!--begin::Copyright-->
+            <div class="text-dark order-2 order-md-1">
+                <span class="text-gray-400 fw-bold me-1">Diplomado Angular - Práctica de listado de personas</span>
+            </div>
+            <!--end::Copyright-->
+        </div>
+        <!--end::Container-->
+    </div>
+    <!--end::Footer-->
+
+</div>
+<!--end::Wrapper-->

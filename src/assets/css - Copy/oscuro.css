@@ -1,0 +1,171 @@
+
+/* Modo Ocuro */
+body.itla-dashboard.m-oscuro {
+    background: #2b2f32 !important;
+}
+
+.m-oscuro .active-cyan-2 input.form-control[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #54c8ff ;
+    box-shadow: 0 1px 0 0 #54c8ff ;
+}
+
+.itla-dashboard.m-oscuro .bg-itla-blue-dark {background-color: #1d1d1d !important;}
+.m-oscuro .active-cyan-4 .fas {color: #54c8ff ;}
+
+.m-oscuro .badge {
+    background-color: #ff3547cf;
+    color: #fff;
+}
+
+.m-oscuro .pulsate::before {
+    border: 4px double #ff3547;
+}
+
+.m-oscuro .navbar.bg-itla-blue-dark form .md-form .form-control {color: #fff;}
+.m-oscuro .navbar.bg-itla-blue-dark form .md-form .form-control::placeholder {color: #fff;}
+.m-oscuro .navbar.bg-itla-blue-dark form .md-form input {border-bottom: 1px solid #fff;}
+
+.m-oscuro .navbar-new-bottom{
+    background-color: #f7f7f7;
+    border-top: 1px solid #e0e0e0;
+}
+
+.m-oscuro .itla-dashboard .header-navbar.navbar-expand-sm.navbar {
+    background-color: #037ccc !important;
+}
+
+.m-oscuro .dropdown .dropdown-divider, .dropdown .dropdown-menu { 
+    border: 1px solid #E6E6E6;
+}
+
+.m-oscuro .card {
+    background-color: #121212;
+    border: 1px solid rgba(0,0,0,0.125);
+}
+
+.m-oscuro .btn-light {
+    color: #000;
+    background-color: #b3b3b3 !important;
+}
+
+.itla-dashboard.m-oscuro .primary-color, .itla-dashboard ul.stepper li.active a .circle, .itla-dashboard ul.stepper li.completed a .circle {
+    background-color: #525252 !important;
+}
+.itla-dashboard.m-oscuro .header-navbar.navbar-expand-sm.navbar {
+    padding: 0;
+    background-color: #525252!important;
+}
+
+.itla-dashboard.m-oscuro .btn-top-menu {
+    color: #00a1ff;
+    background-color: #525252!important;
+}
+
+.itla-dashboard.m-oscuro li.btn-top-menu:not([disabled]):not(.disabled):active, 
+.itla-dashboard.m-oscuro li.btn-top-menu:not([disabled]):not(.disabled).active, 
+.itla-dashboard.m-oscuro .show>li.btn-top-menu.dropdown-toggle {
+    background-color: #2f2f2f !important;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+}
+
+.itla-dashboard.m-oscuro .pills-primary .nav-link.active {
+    background-color: #d4d4d4!important;
+    color: #333;
+}
+
+.itla-dashboard.m-oscuro .blue-gradient {
+    background: linear-gradient(40deg,#a5a5a5,#353535) !important;
+}
+
+.itla-dashboard.m-oscuro .text-blue {
+    color: #ffffff;
+}
+
+.itla-dashboard.m-oscuro .mdb-color.lighten-3 {
+    background-color: #ababab !important;
+}
+.itla-dashboard.m-oscuro .info-color-dark {
+    background-color: #7d7d7d !important;
+}
+
+.itla-dashboard.m-oscuro .table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #c5c5c5;
+}
+
+.itla-dashboard.m-oscuro .bg-blue-2 {
+    background-color: #9292924a!important;
+    color: #ccc !important;
+}
+
+.itla-dashboard.m-oscuro .table-hover tbody tr:hover {
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.075);
+}
+
+.itla-dashboard.m-oscuro .pmd-textfield label {
+    color: rgb(230 230 230 / 54%);
+}
+
+.itla-dashboard.m-oscuro .pmd-textfield .custom-select, .pmd-textfield .form-control {
+    color: rgb(140 140 140 / 87%);
+    border-bottom: solid 1px rgb(255 255 255 / 43%);
+}
+
+.itla-dashboard.m-oscuro .card.card-cascade.narrower {
+    margin-top: 1.25rem;
+    background-color: #2d2d2d;
+}
+
+table tr:last-child td, .table tr:last-child th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top:none;
+}
+
+.itla-dashboard.m-oscuro .card-header {
+    background-color: rgb(113 113 113 / 48%);
+}
+
+.itla-dashboard.m-oscuro .card-header p {
+    color: #bdbdbd !important;
+}
+
+.itla-dashboard.m-oscuro .accordion .card-header {
+    background: transparent;
+}
+
+.itla-dashboard.m-oscuro .card-body .card-title {
+    color: #e8e8e8;
+}
+
+.itla-dashboard.m-oscuro .cuatrimestres.nav-tabs .nav-link, 
+.itla-dashboard.m-oscuro .cuatrimestres.nav-tabs .nav-item.show .nav-link {
+    color: #909090;
+    background-color: #2d2d2d;
+}
+.itla-dashboard.m-oscuro .cuatrimestres.nav-tabs li:last-child .nav-link, 
+.itla-dashboard.m-oscuro .cuatrimestres.nav-tabs .nav-item.show .nav-link {
+    border-right:0;
+}
+
+.itla-dashboard.m-oscuro .md-accordion .card:first-of-type, 
+.itla-dashboard.m-oscuro .md-accordion .card:not(:first-of-type):not(:last-of-type) {
+    border-bottom: 1px solid #e0e0e05e;
+}
+
+.itla-dashboard.m-oscuro .pmd-textfield .custom-select {
+    color: rgba(236, 236, 236, 0.87);
+    border-bottom: solid 1px rgb(255 255 255 / 46%);
+}
+
+.itla-dashboard.m-oscuro .pmd-textfield .form-control {
+    color: rgb(97 97 97 / 87%);
+    border-bottom: solid 1px rgb(255 255 255 / 46%);
+}
+
+.itla-dashboard.m-oscuro .table th, .itla-dashboard.m-oscuro .table td {
+    border-top: 1px solid #dee2e647;
+}
